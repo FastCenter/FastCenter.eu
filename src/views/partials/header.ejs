@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= typeof title !== 'undefined' ? title + ' | ' + appName : appName %></title>
-    <meta name="description" content="FastCenter - High-Performance Cybersecurity Consultancy. Audits, Pentesting, and Compliance.">
+    <title>
+        <%= typeof title !=='undefined' ? title + ' | ' + appName : appName %>
+    </title>
+    <meta name="description"
+        content="FastCenter - High-Performance Cybersecurity Consultancy. Audits, Pentesting, and Compliance.">
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body class="flex flex-col min-h-screen">
     <!-- Navigation -->
     <nav class="bg-brand-dark/90 backdrop-blur-sm border-b border-brand-accent/20 sticky top-0 z-50">
@@ -18,17 +23,22 @@
                         <!-- Logo -->
                         <a href="/" class="flex items-center gap-2 group">
                             <!-- Placeholder Logo if image missing, or actual image -->
-                            <img class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(102,252,241,0.5)]" src="/images/logo.png" alt="<%= appName %> Logo" onerror="this.style.display='none'">
-                            <span class="font-bold text-xl tracking-tight text-brand-light group-hover:text-glow transition-all duration-300">
+                            <img class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(102,252,241,0.5)]"
+                                src="/images/logo.png" alt="<%= appName %> Logo" onerror="this.style.display='none'">
+                            <span class="font-bold text-xl tracking-tight text-brand-light transition-all duration-300">
                                 <%= appName %>
                             </span>
                         </a>
                     </div>
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-                    <a href="#services" class="border-transparent text-gray-300 hover:text-brand-light hover:text-glow inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Services</a>
-                    <a href="#certifications" class="border-transparent text-gray-300 hover:text-brand-light hover:text-glow inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Certifications</a>
-                    <a href="#contact" class="text-brand-dark bg-brand-light hover:bg-brand-white hover:shadow-[0_0_15px_rgba(102,252,241,0.7)] transition-all duration-300 text-sm font-bold px-4 py-2 ml-4 rounded-sm uppercase tracking-wider">Contact Us</a>
+                    <a href="#services"
+                        class="border-transparent text-gray-300 hover:text-brand-light inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Services</a>
+                    <a href="#certifications"
+                        class="border-transparent text-gray-300 hover:text-brand-light inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Certifications</a>
+                    <a href="#contact"
+                        class="text-brand-dark bg-brand-light hover:bg-brand-white hover:shadow-[0_0_15px_rgba(102,252,241,0.7)] transition-all duration-300 text-sm font-bold px-4 py-2 ml-4 rounded-sm uppercase tracking-wider">Contact
+                        Us</a>
                 </div>
             </div>
         </div>

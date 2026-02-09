@@ -12,22 +12,20 @@
   .glass-panel {
     @apply bg-surface-card backdrop-blur-md border border-brand-accent/20 shadow-lg;
   }
-  
+
   .glass-panel:hover {
     @apply border-brand-light/50 shadow-brand-light/20;
   }
 
-  .text-glow {
-    text-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
-  }
+
 
   .border-glow {
     box-shadow: 0 0 15px rgba(69, 162, 158, 0.3) inset;
   }
-  
+
   .cyber-grid {
     background-size: 40px 40px;
-    background-image: 
+    background-image:
       linear-gradient(to right, rgba(69, 162, 158, 0.05) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(69, 162, 158, 0.05) 1px, transparent 1px);
   }
@@ -37,7 +35,13 @@
   body {
     @apply bg-surface-bg text-brand-dark font-sans;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold text-brand-dark;
   }
 }
@@ -46,6 +50,7 @@
   .btn-primary {
     @apply bg-brand-accent text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-brand-dark transition duration-300 ease-in-out cursor-pointer;
   }
+
   .card {
     @apply bg-card-bg rounded-xl shadow-lg p-6 border border-gray-100;
   }

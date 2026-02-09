@@ -453,7 +453,12 @@ body {
   color: rgb(11 12 16 / var(--tw-text-opacity));
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(11 12 16 / var(--tw-text-opacity));
@@ -1331,13 +1336,9 @@ h1, h2, h3, h4, h5, h6 {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.text-glow {
-  text-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
-}
-
 .cyber-grid {
   background-size: 40px 40px;
-  background-image: 
+  background-image:
       linear-gradient(to right, rgba(69, 162, 158, 0.05) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(69, 162, 158, 0.05) 1px, transparent 1px);
 }
@@ -1402,10 +1403,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:text-glow:hover {
-  text-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
-}
-
 .focus\:border-brand-light:focus {
   --tw-border-opacity: 1;
   border-color: rgb(102 252 241 / var(--tw-border-opacity));
@@ -1429,10 +1426,6 @@ h1, h2, h3, h4, h5, h6 {
 .group:hover .group-hover\:text-brand-light {
   --tw-text-opacity: 1;
   color: rgb(102 252 241 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-glow {
-  text-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
 }
 
 @media (min-width: 640px) {
