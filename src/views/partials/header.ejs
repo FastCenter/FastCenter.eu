@@ -10,25 +10,25 @@
 </head>
 <body class="flex flex-col min-h-screen">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-brand-dark/90 backdrop-blur-sm border-b border-brand-accent/20 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <!-- Logo -->
-                        <a href="/" class="flex items-center gap-2">
+                        <a href="/" class="flex items-center gap-2 group">
                             <!-- Placeholder Logo if image missing, or actual image -->
-                            <img class="h-8 w-auto" src="/images/logo.png" alt="<%= appName %> Logo" onerror="this.style.display='none'">
-                            <span class="font-bold text-xl tracking-tight text-brand-dark">
+                            <img class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(102,252,241,0.5)]" src="/images/logo.png" alt="<%= appName %> Logo" onerror="this.style.display='none'">
+                            <span class="font-bold text-xl tracking-tight text-brand-light group-hover:text-glow transition-all duration-300">
                                 <%= appName %>
                             </span>
                         </a>
                     </div>
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-                    <a href="#services" class="border-transparent text-gray-500 hover:border-brand-light hover:text-brand-dark inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Services</a>
-                    <a href="#certifications" class="border-transparent text-gray-500 hover:border-brand-light hover:text-brand-dark inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Certifications</a>
-                    <a href="#contact" class="btn-primary text-sm px-4 py-2 ml-4">Contact Us</a>
+                    <a href="#services" class="border-transparent text-gray-300 hover:text-brand-light hover:text-glow inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Services</a>
+                    <a href="#certifications" class="border-transparent text-gray-300 hover:text-brand-light hover:text-glow inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Certifications</a>
+                    <a href="#contact" class="text-brand-dark bg-brand-light hover:bg-brand-white hover:shadow-[0_0_15px_rgba(102,252,241,0.7)] transition-all duration-300 text-sm font-bold px-4 py-2 ml-4 rounded-sm uppercase tracking-wider">Contact Us</a>
                 </div>
             </div>
         </div>
