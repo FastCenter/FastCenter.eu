@@ -1,0 +1,86 @@
+<%- include('partials/header', { page: 'rdi' }) %>
+
+    <div class="relative bg-brand-dark overflow-hidden min-h-screen pt-20">
+        <div class="absolute inset-0 cyber-grid opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-extrabold text-white sm:text-5xl text-glow mb-4">
+                    I+D+i
+                </h1>
+                <p class="max-w-2xl mx-auto text-xl text-gray-400">
+                    Innovación, Desarrollo e investigación. Creamos la tecnología que protegerá el mañana.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Project 1 -->
+                <div class="glass-panel p-8 rounded-lg relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-50 text-6xl font-black text-brand-secondary transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                        AI</div>
+                    <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Proyecto CYBER-SENTINEL</h3>
+                    <p class="text-brand-accent text-sm mb-4 relative z-10 font-mono">Financiado por: Programa Europeo
+                        Horizon</p>
+                    <p class="text-gray-400 mb-6 relative z-10">
+                        Desarrollo de una IA autónoma capaz de detectar y neutralizar ataques de día cero en
+                        infraestructuras críticas (Smart Grids) sin intervención humana.
+                    </p>
+                    <div class="flex gap-2 relative z-10">
+                        <span class="bg-brand-secondary/50 text-brand-light text-xs px-2 py-1 rounded">Machine
+                            Learning</span>
+                        <span class="bg-brand-secondary/50 text-brand-light text-xs px-2 py-1 rounded">OT
+                            Security</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-panel p-8 rounded-lg relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-50 text-6xl font-black text-brand-secondary transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                        QC</div>
+                    <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Iniciativa QUANTUM-SHIELD</h3>
+                    <p class="text-brand-accent text-sm mb-4 relative z-10 font-mono">Financiado por: CDTI</p>
+                    <p class="text-gray-400 mb-6 relative z-10">
+                        Investigación en criptografía post-cuántica para asegurar las comunicaciones gubernamentales
+                        frente a la amenaza de la computación cuántica.
+                    </p>
+                    <div class="flex gap-2 relative z-10">
+                        <span class="bg-brand-secondary/50 text-brand-light text-xs px-2 py-1 rounded">Quantum
+                            Crypto</span>
+                        <span class="bg-brand-secondary/50 text-brand-light text-xs px-2 py-1 rounded">Defense</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-panel p-8 rounded-lg relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-50 text-6xl font-black text-brand-secondary transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                        IoT</div>
+                    <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Secure-IoT Framework</h3>
+                    <p class="text-brand-accent text-sm mb-4 relative z-10 font-mono">Colaboración: Universidade
+                        Politécnica</p>
+                    <p class="text-gray-400 mb-6 relative z-10">
+                        Creación de un estándar abierto de seguridad para dispositivos IoT de consumo masivo,
+                        enfocándose en la privacidad desde el diseño.
+                    </p>
+                    <div class="flex gap-2 relative z-10">
+                        <span class="bg-brand-secondary/50 text-brand-light text-xs px-2 py-1 rounded">IoT</span>
+                        <span class="bg-brand-secondary/50 text-brand-light text-xs px-2 py-1 rounded">Privacy</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div
+                    class="glass-panel p-8 rounded-lg relative overflow-hidden group border-dashed border-2 border-brand-accent/20 flex items-center justify-center min-h-[200px]">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-gray-500 mb-2">Nuevo Proyecto Confidencial</h3>
+                        <p class="text-gray-600 text-sm">Iniciando Fase 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

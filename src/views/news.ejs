@@ -1,0 +1,144 @@
+<%- include('partials/header', { page: 'news' }) %>
+
+    <div class="bg-brand-dark min-h-screen pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+            <div class="flex items-center justify-between mb-12">
+                <h1 class="text-4xl font-extrabold text-white text-glow">Actualidad & Insights</h1>
+                <div class="hidden md:block">
+                    <span class="text-gray-400 text-sm font-mono">Última actualización: <%= new
+                            Date().toLocaleDateString() %></span>
+                </div>
+            </div>
+
+            <!-- Featured Article -->
+            <div
+                class="glass-panel rounded-2xl overflow-hidden mb-16 group cursor-pointer border hover:border-brand-light/30 transition-all">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="bg-brand-secondary h-64 md:h-auto relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-accent/20 mix-blend-overlay"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="text-9xl font-black text-brand-dark opacity-20 transform -rotate-12 group-hover:scale-110 transition-transform duration-500">2026</span>
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="flex items-center gap-4 mb-4 text-sm">
+                            <span
+                                class="bg-brand-light text-brand-dark px-2 py-0.5 rounded font-bold uppercase tracking-wider text-xs">Informe
+                                Anual</span>
+                            <span class="text-gray-400">10 Feb 2026</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4 group-hover:text-brand-light transition-colors">
+                            Radar de Amenazas 2026: El auge de la IA Adversarial</h2>
+                        <p class="text-gray-400 mb-6 text-lg">
+                            Nuestro equipo de inteligencia ha analizado más de 50.000 incidentes para elaborar este
+                            informe. Descubra cómo los atacantes están utilizando LLMs para perfeccionar el phishing y
+                            cómo defenderse.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <div class="w-8 h-8 rounded-full bg-gray-600 mr-3"></div>
+                                Por Carlos Webb, CISO
+                            </div>
+                            <span class="text-brand-accent font-bold text-sm ml-auto">Leer Artículo →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Main Feed -->
+                <div class="lg:col-span-2 space-y-8">
+                    <h3 class="text-xl font-bold text-white border-b border-gray-700 pb-4 mb-6">Artículos Recientes</h3>
+
+                    <!-- Article Item -->
+                    <article class="flex flex-col sm:flex-row gap-6 group cursor-pointer">
+                        <div
+                            class="w-full sm:w-48 h-32 bg-gray-800 rounded-lg flex-shrink-0 flex items-center justify-center border border-gray-700 group-hover:border-brand-accent transition-colors">
+                            <span class="text-4xl">⚠️</span>
+                        </div>
+                        <div>
+                            <div class="text-brand-accent text-xs font-bold uppercase mb-1">Alerta Crítica</div>
+                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-light">Vulnerabilidad
+                                Zero-Day en Servidores Exchange</h4>
+                            <p class="text-gray-400 text-sm mb-3">
+                                Se ha detectado explotación activa. Recomendamos aplicar los parches de emergencia
+                                publicados por el fabricante inmediatamente.
+                            </p>
+                            <span class="text-gray-500 text-xs">Hace 2 días • Threat Intel Team</span>
+                        </div>
+                    </article>
+
+                    <!-- Article Item -->
+                    <article class="flex flex-col sm:flex-row gap-6 group cursor-pointer">
+                        <div
+                            class="w-full sm:w-48 h-32 bg-gray-800 rounded-lg flex-shrink-0 flex items-center justify-center border border-gray-700 group-hover:border-brand-accent transition-colors">
+                            <span class="text-4xl">🇪🇺</span>
+                        </div>
+                        <div>
+                            <div class="text-brand-accent text-xs font-bold uppercase mb-1">Normativa</div>
+                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-light">Guía práctica de
+                                implementación NIS2</h4>
+                            <p class="text-gray-400 text-sm mb-3">
+                                Resumimos los puntos clave para directivos de empresas esenciales y cómo evitar
+                                sanciones millonarias.
+                            </p>
+                            <span class="text-gray-500 text-xs">Hace 5 días • Legal Dept.</span>
+                        </div>
+                    </article>
+
+                    <!-- Article Item -->
+                    <article class="flex flex-col sm:flex-row gap-6 group cursor-pointer">
+                        <div
+                            class="w-full sm:w-48 h-32 bg-gray-800 rounded-lg flex-shrink-0 flex items-center justify-center border border-gray-700 group-hover:border-brand-accent transition-colors">
+                            <span class="text-4xl">🏆</span>
+                        </div>
+                        <div>
+                            <div class="text-brand-accent text-xs font-bold uppercase mb-1">Corporativo</div>
+                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-light">
+                                <%= appName %> recibe el premio a la Excelencia en Ciberseguridad
+                            </h4>
+                            <p class="text-gray-400 text-sm mb-3">
+                                Reconocidos en la gala nacional por nuestro innovador sistema de detección temprana de
+                                ransomware.
+                            </p>
+                            <span class="text-gray-500 text-xs">Hace 1 semana • Prensa</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="space-y-8">
+                    <div class="glass-panel p-6 rounded-xl">
+                        <h4 class="text-white font-bold mb-4">Categorías</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-gray-800 hover:bg-brand-secondary text-gray-300 text-xs px-3 py-1 rounded-full cursor-pointer transition-colors">Amenazas
+                                (15)</span>
+                            <span
+                                class="bg-gray-800 hover:bg-brand-secondary text-gray-300 text-xs px-3 py-1 rounded-full cursor-pointer transition-colors">Normativa
+                                (8)</span>
+                            <span
+                                class="bg-gray-800 hover:bg-brand-secondary text-gray-300 text-xs px-3 py-1 rounded-full cursor-pointer transition-colors">Eventos
+                                (4)</span>
+                            <span
+                                class="bg-gray-800 hover:bg-brand-secondary text-gray-300 text-xs px-3 py-1 rounded-full cursor-pointer transition-colors">Tutoriales
+                                (12)</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border border-brand-accent/30 bg-brand-accent/5">
+                        <h4 class="text-brand-light font-bold mb-2">Newsletter</h4>
+                        <p class="text-gray-400 text-xs mb-4">Reciba alertas de seguridad críticas directamente en su
+                            correo.</p>
+                        <input type="email" placeholder="Su email corporativo"
+                            class="w-full bg-brand-dark border border-gray-600 rounded p-2 text-sm text-white mb-2 focus:border-brand-light focus:outline-none">
+                        <button class="w-full btn-primary py-2 text-xs font-bold uppercase rounded">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

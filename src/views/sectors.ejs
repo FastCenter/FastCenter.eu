@@ -1,0 +1,145 @@
+<%- include('partials/header', { page: 'sectors' }) %>
+
+    <div class="bg-brand-dark min-h-screen pt-20">
+
+        <!-- Hero Section -->
+        <div class="relative py-20 overflow-hidden bg-brand-secondary/10">
+            <div class="absolute inset-0 cyber-grid opacity-20 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h1 class="text-4xl font-extrabold text-white sm:text-6xl text-glow mb-6">
+                    Sectores Críticos
+                </h1>
+                <p class="max-w-3xl mx-auto text-xl text-gray-400">
+                    La ciberseguridad no es genérica. Adaptamos nuestra inteligencia a la realidad operativa y normativa
+                    de cada industria.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+            <!-- Sector 1: Sanidad -->
+            <div
+                class="glass-panel rounded-2xl p-8 md:p-12 mb-12 border-l-4 border-green-500 hover:shadow-[0_0_30px_rgba(34,197,94,0.1)] transition-all duration-300">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div
+                        class="md:w-1/3 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-700 pb-8 md:pb-0 md:pr-8">
+                        <div class="text-6xl mb-4">🏥</div>
+                        <h2 class="text-3xl font-bold text-white text-center">Sanidad</h2>
+                        <p class="text-green-500 font-mono text-sm mt-2">CRITICAL INFRASTRUCTURE</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold text-white mb-4">El Desafío</h3>
+                        <p class="text-gray-400 mb-6">
+                            Hospitales digitalizados con dispositivos médicos IoT (IoMT) vulnerables y sistemas legacy
+                            bajo constante amenaza de Ransomware.
+                        </p>
+                        <h3 class="text-xl font-bold text-white mb-4">Nuestra Solución</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                Segmentación de redes IoMT para aislar dispositivos vitales.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                Hacking ético especializado en entornos clínicos.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✓</span>
+                                Aseguramiento de disponibilidad 24/7.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sector 2: Banca -->
+            <div
+                class="glass-panel rounded-2xl p-8 md:p-12 mb-12 border-l-4 border-brand-light hover:shadow-[0_0_30px_rgba(96,165,250,0.1)] transition-all duration-300">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div
+                        class="md:w-1/3 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-700 pb-8 md:pb-0 md:pr-8">
+                        <div class="text-6xl mb-4">🏦</div>
+                        <h2 class="text-3xl font-bold text-white text-center">Banca y Fintech</h2>
+                        <p class="text-brand-light font-mono text-sm mt-2">SECURE TRANSACTIONS</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold text-white mb-4">El Desafío</h3>
+                        <p class="text-gray-400 mb-6">
+                            La transición a la nube y las APIs abiertas exigen una defensa robusta contra el fraude y
+                            ataques avanzados persistentes (APT).
+                        </p>
+                        <h3 class="text-xl font-bold text-white mb-4">Nuestra Solución</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="text-brand-light mr-2">✓</span>
+                                Pruebas de intrusión en aplicaciones bancarias y pasarelas de pago.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-light mr-2">✓</span>
+                                Auditoría continua de seguridad en la nube.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-light mr-2">✓</span>
+                                Desarrollo seguro de herramientas fintech.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sector 3: Industria -->
+            <div
+                class="glass-panel rounded-2xl p-8 md:p-12 mb-12 border-l-4 border-yellow-500 hover:shadow-[0_0_30px_rgba(234,179,8,0.1)] transition-all duration-300">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div
+                        class="md:w-1/3 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-700 pb-8 md:pb-0 md:pr-8">
+                        <div class="text-6xl mb-4">🏭</div>
+                        <h2 class="text-3xl font-bold text-white text-center">Industria 4.0</h2>
+                        <p class="text-yellow-500 font-mono text-sm mt-2">OT SECURITY</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold text-white mb-4">El Desafío</h3>
+                        <p class="text-gray-400 mb-6">
+                            Interconectar la planta de producción (OT) con la gestión (IT) expone maquinaria crítica a
+                            ciberataques que pueden paralizar la producción.
+                        </p>
+                        <h3 class="text-xl font-bold text-white mb-4">Nuestra Solución</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-2">✓</span>
+                                Inventariado de activos industriales.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-2">✓</span>
+                                Aislamiento de redes de control.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-2">✓</span>
+                                Acceso remoto seguro para mantenimiento.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid for others -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 rounded-xl text-center">
+                    <div class="text-4xl mb-4">🏛️</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Administración Pública</h3>
+                    <p class="text-gray-400 text-sm">Protección de infraestructuras críticas y aseguramiento de
+                        servicios al ciudadano frente a ciberamenazas.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-xl text-center">
+                    <div class="text-4xl mb-4">🛒</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Retail & E-commerce</h3>
+                    <p class="text-gray-400 text-sm">Seguridad en plataformas de venta online, protección contra bots y
+                        aseguramiento del checkout.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

@@ -29,7 +29,8 @@ app.use('/', routes);
 app.use((req, res, next) => {
     res.status(404).render('index', {
         title: '404 - Not Found',
-        page: '404' // We can handle this in index.ejs or separate view
+        page: '404', // We can handle this in index.ejs or separate view
+        successMessage: null
     });
 });
 
