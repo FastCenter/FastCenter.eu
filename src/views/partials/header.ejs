@@ -7,26 +7,81 @@
     <title>
         <%= typeof title !=='undefined' ? title + ' | ' + appName : appName %>
     </title>
-    <meta name="description"
-        content="FastCenter - High-Performance Cybersecurity Consultancy. Audits, Pentesting, and Compliance.">
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="FastCenter - Advanced Cybersecurity & Custom Software Development.">
+    <!-- Tailwind CSS (CDN for immediate visual fix) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#003366', // Deep Corporate Blue
+                            secondary: '#00AEEF', // Bright Cyan/Blue
+                            accent: '#38bdf8', // Sky Blue
+                            dark: '#111827', // Dark Gray
+                            light: '#F3F4F6', // Light Gray
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .glass-panel {
+                @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+            }
+            .text-gradient {
+                @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+            }
+            .btn-primary {
+                @apply bg-brand-primary border-2 border-transparent text-white font-semibold py-3 px-8 rounded-md hover:bg-brand-secondary shadow-md transition-all duration-300 ease-in-out cursor-pointer inline-flex items-center justify-center;
+            }
+        }
+    </style>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-col min-h-screen">
+<body
+    class="flex flex-col min-h-screen bg-brand-light text-brand-dark antialiased font-sans selection:bg-brand-primary selection:text-white">
     <!-- Navigation -->
-    <nav class="bg-brand-dark/90 backdrop-blur-sm border-b border-brand-accent/20 sticky top-0 z-50">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
+            <div class="flex justify-between h-20 items-center">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <!-- Logo -->
-                        <a href="/" class="flex items-center gap-2 group">
-                            <!-- Placeholder Logo if image missing, or actual image -->
-                            <img class="h-8 w-auto filter drop-shadow-[0_0_5px_rgba(102,252,241,0.5)]"
-                                src="/images/logo.png" alt="<%= appName %> Logo" onerror="this.style.display='none'">
+                        <a href="/" class="flex items-center gap-3 group">
+                            <div
+                                class="w-10 h-10 rounded-md bg-brand-primary flex items-center justify-center text-white font-sans font-bold text-xl shadow-sm">
+                                F
+                            </div>
                             <span
-                                class="font-bold text-xl tracking-tight text-brand-light group-hover:text-glow transition-all duration-300">
+                                class="font-sans font-bold text-xl tracking-tight text-brand-primary group-hover:text-brand-secondary transition-colors duration-300">
                                 <%= appName %>
                             </span>
                         </a>
@@ -34,15 +89,29 @@
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
                     <a href="/"
-                        class="<%= (typeof page !== 'undefined' && page === 'home') ? 'border-brand-light text-brand-light text-glow' : 'border-transparent text-gray-300 hover:text-brand-light hover:text-glow' %> inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Inicio</a>
+                        class="<%= (typeof page !== 'undefined' && page === 'home') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        Inicio
+                    </a>
                     <a href="/services"
-                        class="<%= (typeof page !== 'undefined' && page === 'services') ? 'border-brand-light text-brand-light text-glow' : 'border-transparent text-gray-300 hover:text-brand-light hover:text-glow' %> inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Servicios</a>
+                        class="<%= (typeof page !== 'undefined' && page === 'services') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        Servicios
+                    </a>
                     <a href="/about"
-                        class="<%= (typeof page !== 'undefined' && page === 'about') ? 'border-brand-light text-brand-light text-glow' : 'border-transparent text-gray-300 hover:text-brand-light hover:text-glow' %> inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Nosotros</a>
+                        class="<%= (typeof page !== 'undefined' && page === 'about') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        Nosotros
+                    </a>
                     <a href="/careers"
-                        class="<%= (typeof page !== 'undefined' && page === 'careers') ? 'border-brand-light text-brand-light text-glow' : 'border-transparent text-gray-300 hover:text-brand-light hover:text-glow' %> inline-flex items-center px-1 pt-1 border-b-2 font-medium transition-all duration-300">Talento</a>
+                        class="<%= (typeof page !== 'undefined' && page === 'careers') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        Talento
+                    </a>
                     <a href="/contact"
-                        class="text-brand-dark bg-brand-light hover:bg-brand-white hover:shadow-[0_0_15px_rgba(102,252,241,0.7)] transition-all duration-300 text-sm font-bold px-4 py-2 ml-4 rounded-sm uppercase tracking-wider">Contacto</a>
+                        class="ml-4 bg-brand-primary text-white hover:bg-brand-secondary px-5 py-2.5 rounded-md font-medium text-sm transition-all duration-300 shadow-sm hover:shadow-md">
+                        Contacto
+                    </a>
+                </div>
+                <!-- Mobile menu button placeholder -->
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <a href="/contact" class="text-brand-primary font-medium">Menu</a>
                 </div>
             </div>
         </div>

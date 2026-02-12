@@ -1,14 +1,19 @@
 <%- include('partials/header', { page: 'about' }) %>
 
-    <div class="bg-brand-dark min-h-screen pt-20">
+    <div class="bg-white min-h-screen pt-20">
 
         <!-- Hero About -->
-        <div class="relative py-20 bg-brand-secondary/5">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl font-extrabold text-white sm:text-6xl text-glow mb-8">
+        <div class="relative py-20 bg-brand-primary border-b border-gray-200 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80"
+                    alt="FastCenter Team"
+                    class="w-full h-full object-cover opacity-10 filter grayscale mix-blend-multiply">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-4xl font-extrabold text-white sm:text-6xl mb-8">
                     Protegiendo el Progreso
                 </h1>
-                <p class="max-w-3xl mx-auto text-xl text-gray-400 leading-relaxed">
+                <p class="max-w-3xl mx-auto text-xl text-blue-100 leading-relaxed font-light">
                     En <%= appName %>, creemos que la seguridad no debe ser un freno, sino el habilitador de la
                         innovación digital. Somos una firma de consultoría boutique especializada en alta complejidad.
                 </p>
@@ -18,157 +23,88 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
             <!-- Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-y border-brand-accent/10 py-12">
+            <div data-aos="fade-up"
+                class="grid grid-cols-2 gap-8 mb-24 border-y border-gray-100 py-12 max-w-4xl mx-auto">
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-brand-light mb-1">10+</div>
-                    <div class="text-gray-500 text-sm uppercase tracking-widest font-mono">Años de Experiencia</div>
+                    <div class="text-4xl font-bold text-brand-primary mb-1">2025</div>
+                    <div class="text-gray-500 text-sm uppercase tracking-widest font-semibold">Año de Fundación</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-brand-light mb-1">500+</div>
-                    <div class="text-gray-500 text-sm uppercase tracking-widest font-mono">Proyectos Exitosos</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-brand-light mb-1">24/7</div>
-                    <div class="text-gray-500 text-sm uppercase tracking-widest font-mono">Cobertura SOC</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-brand-light mb-1">100%</div>
-                    <div class="text-gray-500 text-sm uppercase tracking-widest font-mono">Certificado</div>
+                    <div class="text-4xl font-bold text-brand-primary mb-1">2</div>
+                    <div class="text-gray-500 text-sm uppercase tracking-widest font-semibold">Partners Estratégicos
+                    </div>
                 </div>
             </div>
 
             <!-- Vision & Values -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
-                <div>
-                    <h2 class="text-3xl font-bold text-white mb-6">Nuestra Filosofía</h2>
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-6">Nuestra Filosofía</h2>
                     <div class="space-y-8">
                         <div class="flex gap-4">
                             <div
-                                class="flex-shrink-0 h-10 w-10 rounded bg-brand-secondary flex items-center justify-center text-brand-light border border-brand-accent">
+                                class="flex-shrink-0 h-10 w-10 rounded bg-brand-primary flex items-center justify-center text-white shadow-lg shadow-brand-primary/30">
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-white">Excelencia Técnica</h3>
-                                <p class="text-gray-400 mt-1">No vendemos cajas negras. Entregamos conocimiento
+                                <h3 class="text-xl font-bold text-brand-dark">Excelencia Técnica</h3>
+                                <p class="text-gray-500 mt-1 leading-relaxed">No vendemos cajas negras. Entregamos
+                                    conocimiento
                                     profundo, código seguro y arquitectura resiliente.</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
                             <div
-                                class="flex-shrink-0 h-10 w-10 rounded bg-brand-secondary flex items-center justify-center text-brand-light border border-brand-accent">
+                                class="flex-shrink-0 h-10 w-10 rounded bg-brand-primary flex items-center justify-center text-white shadow-lg shadow-brand-primary/30">
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-white">Velocidad de Respuesta</h3>
-                                <p class="text-gray-400 mt-1">En ciberseguridad, cada segundo cuenta. Nuestros
-                                    protocolos de respuesta aseguran la mínima ventana de exposición.</p>
+                                <h3 class="text-xl font-bold text-brand-dark">Agilidad y Adaptación</h3>
+                                <p class="text-gray-500 mt-1 leading-relaxed">Entendemos que cada negocio es único. Nos
+                                    adaptamos a tus
+                                    necesidades con rapidez y eficacia.</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
                             <div
-                                class="flex-shrink-0 h-10 w-10 rounded bg-brand-secondary flex items-center justify-center text-brand-light border border-brand-accent">
+                                class="flex-shrink-0 h-10 w-10 rounded bg-brand-primary flex items-center justify-center text-white shadow-lg shadow-brand-primary/30">
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-white">Transparencia Total</h3>
-                                <p class="text-gray-400 mt-1">Hablamos claro sobre los riesgos. Sin miedo, incertidumbre
-                                    o duda (FUD). Solo datos y soluciones.</p>
+                                <h3 class="text-xl font-bold text-brand-dark">Transparencia Total</h3>
+                                <p class="text-gray-500 mt-1 leading-relaxed">Hablamos claro sobre los riesgos. Sin
+                                    tecnicismos
+                                    innecesarios ni estrategias de miedo. Solo datos y soluciones reales.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="absolute inset-0 bg-brand-light/10 blur-3xl transform rotate-6"></div>
-                    <div class="glass-panel p-8 rounded-xl relative border border-gray-700">
-                        <p class="text-2xl text-gray-300 italic mb-6">
+                <div class="relative" data-aos="fade-left">
+                    <div class="absolute inset-0 bg-brand-primary/5 blur-3xl transform rotate-6"></div>
+                    <div class="glass-panel p-8 rounded-xl relative border border-gray-100 shadow-xl bg-white/80">
+                        <p class="text-2xl text-gray-600 italic mb-6 leading-relaxed">
                             "La misión de <%= appName %> es simple: queremos que nuestros clientes duerman tranquilos
-                                sabiendo que sus activos más valiosos están vigilados por los mejores expertos."
+                                sabiendo que sus activos más valiosos están vigilados por expertos y sus sistemas
+                                construidos con solidez."
                         </p>
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-gray-600 rounded-full mr-4"></div>
+                            <div
+                                class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-xl text-gray-500 font-bold">
+                                FG</div>
                             <div>
-                                <div class="text-white font-bold">Roberto García</div>
-                                <div class="text-brand-accent text-sm">Fundador & CEO</div>
+                                <div class="text-brand-dark font-bold">FastCenter Team</div>
+                                <div class="text-brand-primary text-sm font-medium">Dirección</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Leadership Team -->
-            <h2 class="text-3xl font-bold text-white mb-10 text-center">Liderazgo</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Member 1 -->
-                <div class="glass-panel rounded-lg overflow-hidden group">
-                    <div class="h-64 bg-gray-800 relative">
-                        <!-- Placeholder for photo -->
-                        <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-50">👨‍💼</div>
-                        <div
-                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent h-20 opacity-80">
-                        </div>
-                    </div>
-                    <div class="p-6 relative -mt-10">
-                        <h3 class="text-xl font-bold text-white">Roberto García</h3>
-                        <p class="text-brand-light text-sm mb-4">CEO & CISO</p>
-                        <p class="text-gray-400 text-xs">Ex-CISO en banca multinacional. 15 años de experiencia
-                            liderando equipos de defensa.</p>
-                    </div>
-                </div>
-                <!-- Member 2 -->
-                <div class="glass-panel rounded-lg overflow-hidden group">
-                    <div class="h-64 bg-gray-800 relative">
-                        <!-- Placeholder for photo -->
-                        <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-50">👩‍💻</div>
-                        <div
-                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent h-20 opacity-80">
-                        </div>
-                    </div>
-                    <div class="p-6 relative -mt-10">
-                        <h3 class="text-xl font-bold text-white">Elena Martín</h3>
-                        <p class="text-brand-light text-sm mb-4">Directora de Operaciones</p>
-                        <p class="text-gray-400 text-xs">Especialista en respuesta a incidentes y gestión de crisis.
-                            Certificada CISSP y CISM.</p>
-                    </div>
-                </div>
-                <!-- Member 3 -->
-                <div class="glass-panel rounded-lg overflow-hidden group">
-                    <div class="h-64 bg-gray-800 relative">
-                        <!-- Placeholder for photo -->
-                        <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-50">👨‍💻</div>
-                        <div
-                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent h-20 opacity-80">
-                        </div>
-                    </div>
-                    <div class="p-6 relative -mt-10">
-                        <h3 class="text-xl font-bold text-white">David Ruiz</h3>
-                        <p class="text-brand-light text-sm mb-4">Head of Red Team</p>
-                        <p class="text-gray-400 text-xs">Pentester galardonado. Experto en evasión de antivirus y
-                            escalada de privilegios.</p>
-                    </div>
-                </div>
-                <!-- Member 4 -->
-                <div class="glass-panel rounded-lg overflow-hidden group">
-                    <div class="h-64 bg-gray-800 relative">
-                        <!-- Placeholder for photo -->
-                        <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-50">👨‍🔬</div>
-                        <div
-                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent h-20 opacity-80">
-                        </div>
-                    </div>
-                    <div class="p-6 relative -mt-10">
-                        <h3 class="text-xl font-bold text-white">Carlos Webb</h3>
-                        <p class="text-brand-light text-sm mb-4">I+D Director</p>
-                        <p class="text-gray-400 text-xs">Doctor en Criptografía. Lidera nuestros proyectos de
-                            investigación europeos.</p>
                     </div>
                 </div>
             </div>

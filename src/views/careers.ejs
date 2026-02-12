@@ -1,95 +1,108 @@
 <%- include('partials/header', { page: 'careers' }) %>
 
-    <div class="relative bg-brand-dark overflow-hidden min-h-screen pt-20">
-        <div class="absolute inset-0 cyber-grid opacity-20 pointer-events-none"></div>
+    <div class="relative bg-white overflow-hidden min-h-screen pt-20">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 bg-brand-light/20 clip-path-slant opacity-30 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
             <div class="text-center mb-16">
-                <h1 class="text-4xl font-extrabold text-white sm:text-5xl text-glow mb-4">
+                <h1 class="text-4xl font-extrabold text-brand-dark sm:text-5xl mb-4">
                     Talento
                 </h1>
-                <p class="max-w-2xl mx-auto text-xl text-gray-400">
-                    Únete a la élite de la ciberseguridad. Buscamos mentes brillantes para desafiar lo imposible.
+                <p class="max-w-2xl mx-auto text-xl text-gray-500">
+                    Únete a la élite de la tecnología. Buscamos mentes brillantes para desafiar lo imposible en un
+                    entorno de excelencia.
                 </p>
             </div>
 
             <!-- Open Positions -->
             <div class="space-y-8">
-                <h2 class="text-2xl font-bold text-white mb-6 border-b border-brand-accent/30 pb-2">Posiciones Abiertas
+                <h2 class="text-2xl font-bold text-brand-dark mb-6 border-b border-gray-200 pb-2" data-aos="fade-right">
+                    Posiciones Abiertas
                 </h2>
 
                 <!-- Job 1 -->
-                <div class="glass-panel p-6 rounded-lg hover:border-brand-light transition-all duration-300 group">
+                <div data-aos="fade-up"
+                    class="glass-panel bg-white/60 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex justify-between items-start flex-col md:flex-row gap-4">
                         <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-brand-light transition-colors">
+                            <h3
+                                class="text-xl font-bold text-brand-dark group-hover:text-brand-primary transition-colors">
                                 Senior Penetration Tester</h3>
-                            <p class="text-brand-accent text-sm mb-2">Madrid / Remoto - Tiempo Completo</p>
-                            <p class="text-gray-400 text-sm">Responsable de realizar auditorías de seguridad en
+                            <p class="text-brand-secondary text-sm mb-2 font-medium">Madrid / Remoto - Tiempo Completo
+                            </p>
+                            <p class="text-gray-500 text-sm">Responsable de realizar auditorías de seguridad en
                                 aplicaciones web, móviles e infraestructuras críticas.</p>
                         </div>
                         <a href="#"
-                            class="btn-primary px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-sm whitespace-nowrap">Aplicar</a>
+                            class="text-brand-primary border border-brand-primary px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-md hover:bg-brand-primary hover:text-white transition-all whitespace-nowrap shadow-sm hover:shadow-md">Aplicar</a>
                     </div>
                 </div>
 
                 <!-- Job 2 -->
-                <div class="glass-panel p-6 rounded-lg hover:border-brand-light transition-all duration-300 group">
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="glass-panel bg-white/60 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex justify-between items-start flex-col md:flex-row gap-4">
                         <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-brand-light transition-colors">SOC
-                                Analyst Level 2</h3>
-                            <p class="text-brand-accent text-sm mb-2">Barcelona / Híbrido - Turnos Rotativos</p>
-                            <p class="text-gray-400 text-sm">Monitorización y análisis de eventos de seguridad, triaje
-                                de incidentes y respuesta en tiempo real.</p>
+                            <h3
+                                class="text-xl font-bold text-brand-dark group-hover:text-brand-primary transition-colors">
+                                Junior Pentester</h3>
+                            <p class="text-brand-secondary text-sm mb-2 font-medium">Remoto - Becas / Prácticas</p>
+                            <p class="text-gray-500 text-sm">Apoyo en auditorías web y de infraestructura. Formación
+                                continua a cargo de la empresa.</p>
                         </div>
                         <a href="#"
-                            class="btn-primary px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-sm whitespace-nowrap">Aplicar</a>
+                            class="text-brand-primary border border-brand-primary px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-md hover:bg-brand-primary hover:text-white transition-all whitespace-nowrap shadow-sm hover:shadow-md">Aplicar</a>
                     </div>
                 </div>
 
                 <!-- Job 3 -->
-                <div class="glass-panel p-6 rounded-lg hover:border-brand-light transition-all duration-300 group">
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="glass-panel bg-white/60 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex justify-between items-start flex-col md:flex-row gap-4">
                         <div>
-                            <h3 class="text-xl font-bold text-white group-hover:text-brand-light transition-colors">
-                                DevSecOps Engineer</h3>
-                            <p class="text-brand-accent text-sm mb-2">Remoto - Tiempo Completo</p>
-                            <p class="text-gray-400 text-sm">Integración de seguridad en pipelines CI/CD y
-                                automatización de controles de seguridad en nube (AWS/Azure).</p>
+                            <h3
+                                class="text-xl font-bold text-brand-dark group-hover:text-brand-primary transition-colors">
+                                Backend Developer (Node.js)</h3>
+                            <p class="text-brand-secondary text-sm mb-2 font-medium">Remoto - Tiempo Completo</p>
+                            <p class="text-gray-500 text-sm">Desarrollo de APIs RESTful seguras, integración de
+                                sistemas y optimización de bases de datos.</p>
                         </div>
                         <a href="#"
-                            class="btn-primary px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-sm whitespace-nowrap">Aplicar</a>
+                            class="text-brand-primary border border-brand-primary px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-md hover:bg-brand-primary hover:text-white transition-all whitespace-nowrap shadow-sm hover:shadow-md">Aplicar</a>
                     </div>
                 </div>
             </div>
 
             <!-- Values/Benefits -->
-            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-4">
-                    <div class="text-4xl mb-4">🚀</div>
-                    <h3 class="text-lg font-bold text-white mb-2">Desarrollo Continuo</h3>
-                    <p class="text-gray-400 text-sm">Presupuesto anual para certificaciones (OSCP, CISSP, SANS) y
-                        conferencias.</p>
+            <div data-aos="fade-up" class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-white/50 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4 transform hover:scale-110 transition-transform">🚀</div>
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Cultura de Aprendizaje</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Fomentamos el crecimiento constante. Aprende nuevas
+                        tecnologías
+                        y metodologías mientras trabajas en proyectos desafiantes.</p>
                 </div>
-                <div class="p-4">
-                    <div class="text-4xl mb-4">🌍</div>
-                    <h3 class="text-lg font-bold text-white mb-2">Flexibilidad Total</h3>
-                    <p class="text-gray-400 text-sm">Trabaja desde donde seas más productivo. Horarios flexibles y
-                        conciliación.</p>
+                <div class="p-6 bg-white/50 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4 transform hover:scale-110 transition-transform">🌍</div>
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Flexibilidad Total</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Trabaja desde donde seas más productivo. Horarios
+                        flexibles y
+                        conciliación real.</p>
                 </div>
-                <div class="p-4">
-                    <div class="text-4xl mb-4">💻</div>
-                    <h3 class="text-lg font-bold text-white mb-2">Tecnología Puntera</h3>
-                    <p class="text-gray-400 text-sm">Acceso a las últimas herramientas de hacking y laboratorios de
-                        pruebas.</p>
+                <div class="p-6 bg-white/50 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4 transform hover:scale-110 transition-transform">💻</div>
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Retos Técnicos</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Olvídate de la rutina. Aquí resolverás problemas
+                        complejos de
+                        seguridad y desarrollo software.</p>
                 </div>
             </div>
 
-            <div class="mt-16 text-center">
-                <p class="text-gray-400 mb-6">¿No encuentras tu posición? Envíanos tu CV espontáneo.</p>
+            <div class="mt-16 text-center" data-aos="fade-up">
+                <p class="text-gray-500 mb-6">¿No encuentras tu posición? Envíanos tu CV espontáneo.</p>
                 <a href="mailto:talento@fastcenter.eu"
-                    class="text-brand-light hover:text-white font-bold text-lg border-b border-brand-accent hover:border-white transition-all">talento@fastcenter.eu</a>
+                    class="text-brand-primary hover:text-brand-secondary font-bold text-lg border-b-2 border-brand-primary/20 hover:border-brand-secondary transition-all">talento@fastcenter.eu</a>
             </div>
         </div>
     </div>

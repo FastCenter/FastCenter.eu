@@ -4,36 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-brand-dark text-brand-white;
-  }
-}
-
-@layer utilities {
-  .glass-panel {
-    @apply bg-surface-card backdrop-blur-md border border-brand-accent/20 shadow-lg;
-  }
-
-  .glass-panel:hover {
-    @apply border-brand-light/50 shadow-brand-light/20;
-  }
-
-
-
-  .border-glow {
-    box-shadow: 0 0 15px rgba(69, 162, 158, 0.3) inset;
-  }
-
-  .cyber-grid {
-    background-size: 40px 40px;
-    background-image:
-      linear-gradient(to right, rgba(69, 162, 158, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(69, 162, 158, 0.05) 1px, transparent 1px);
-  }
-}
-
-@layer base {
-  body {
-    @apply bg-surface-bg text-brand-dark font-sans;
+    @apply bg-brand-light text-brand-dark font-sans antialiased;
   }
 
   h1,
@@ -42,16 +13,34 @@
   h4,
   h5,
   h6 {
-    @apply font-bold text-brand-dark;
+    @apply font-bold text-brand-primary tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-accent text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-brand-dark transition duration-300 ease-in-out cursor-pointer;
+    @apply bg-brand-primary border-2 border-transparent text-white font-semibold py-3 px-8 rounded-md hover:bg-brand-secondary shadow-md transition-all duration-300 ease-in-out cursor-pointer inline-flex items-center justify-center;
   }
 
-  .card {
-    @apply bg-card-bg rounded-xl shadow-lg p-6 border border-gray-100;
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+  }
+
+  .blob {
+    @apply absolute rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse;
   }
 }

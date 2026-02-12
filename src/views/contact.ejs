@@ -1,85 +1,104 @@
 <%- include('partials/header', { page: 'contact' }) %>
 
-    <div class="relative bg-brand-dark overflow-hidden min-h-screen pt-20">
-        <div class="absolute inset-0 cyber-grid opacity-20 pointer-events-none"></div>
+    <div class="relative bg-gray-50 overflow-hidden min-h-screen pt-20">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1600&q=80"
+                alt="World Map Background" class="w-full h-full object-cover opacity-5 grayscale">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/80 to-white/40"></div>
+        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
-            <div class="text-center mb-16">
-                <h1 class="text-4xl font-extrabold text-white sm:text-5xl text-glow mb-4">
+            <div class="text-center mb-16" data-aos="fade-down">
+                <h1 class="text-4xl font-extrabold text-brand-dark sm:text-5xl mb-4">
                     Contacto
                 </h1>
-                <p class="max-w-2xl mx-auto text-xl text-gray-400">
+                <p class="max-w-2xl mx-auto text-xl text-gray-500">
                     Inicie una conversación segura con nuestros expertos.
                 </p>
             </div>
 
-            <div class="max-w-4xl mx-auto glass-panel p-8 rounded-lg shadow-2xl relative overflow-hidden">
-                <div
-                    class="absolute top-0 right-0 w-32 h-32 bg-brand-accent/20 blur-3xl rounded-full translate-x-10 -translate-y-10">
+            <div data-aos="fade-up"
+                class="max-w-5xl mx-auto glass-panel bg-white/90 rounded-xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col md:flex-row">
+
+                <!-- Info Section -->
+                <div class="bg-brand-primary p-12 md:w-5/12 text-white relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-brand-secondary opacity-20 rounded-full blur-3xl">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-brand-dark opacity-10 rounded-full blur-3xl">
+                    </div>
+
+                    <div class="relative z-10 space-y-10">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                            <p class="text-blue-100 leading-relaxed">Estamos a su disposición para resolver cualquier
+                                duda o discutir nuevos proyectos.</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">📍</span>
+                                <div>
+                                    <h4 class="font-bold text-white">Oficinas Centrales</h4>
+                                    <p class="text-blue-100 text-sm mt-1">Calle de la Ciberseguridad, 42<br>28000
+                                        Madrid, España</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">📞</span>
+                                <div>
+                                    <h4 class="font-bold text-white">Teléfono</h4>
+                                    <p class="text-blue-100 text-sm mt-1">+34 912 345 678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">✉️</span>
+                                <div>
+                                    <h4 class="font-bold text-white">Email</h4>
+                                    <p class="text-blue-100 text-sm mt-1">info@fastcenter.eu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <!-- Info -->
-                    <div class="space-y-8">
+                <!-- Form Section -->
+                <div class="p-12 md:w-7/12">
+                    <form action="/contact" method="POST" class="space-y-6">
                         <div>
-                            <h3 class="text-xl font-bold text-white mb-4">Oficinas Centrales</h3>
-                            <p class="text-gray-400">Calle de la Ciberseguridad, 42<br>28000 Madrid, España</p>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+                            <input type="text" name="name" id="name" required
+                                class="mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-sm py-3 px-4 text-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-primary focus:border-brand-primary transition-all duration-200 sm:text-sm">
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-white mb-4">Comunicación Directa</h3>
-                            <p class="flex items-center text-gray-400 mb-2">
-                                <span class="text-brand-light mr-2">📞</span> +34 912 345 678
-                            </p>
-                            <p class="flex items-center text-gray-400">
-                                <span class="text-brand-light mr-2">✉️</span> info@fastcenter.eu
-                            </p>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email corporativo</label>
+                            <input type="email" name="email" id="email" required
+                                class="mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-sm py-3 px-4 text-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-primary focus:border-brand-primary transition-all duration-200 sm:text-sm">
                         </div>
-                        <div class="pt-8 border-t border-brand-accent/20">
-                            <h3 class="text-xl font-bold text-white mb-4">Soporte 24/7 (SOC)</h3>
-                            <p class="text-gray-400 text-sm">Para clientes con contrato de soporte activo, utilice los
-                                canales dedicados para respuesta inmediata ante incidentes.</p>
-                            <p class="text-brand-accent font-mono mt-2">soc@fastcenter.eu</p>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Asunto</label>
+                            <select id="subject" name="subject"
+                                class="mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-sm py-3 px-4 text-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-primary focus:border-brand-primary transition-all duration-200 sm:text-sm">
+                                <option>Información General</option>
+                                <option>Solicitar Auditoría</option>
+                                <option>Incidente de Seguridad</option>
+                                <option>Partners / Alianzas</option>
+                            </select>
                         </div>
-                    </div>
-
-                    <!-- Form -->
-                    <div>
-                        <form action="/contact" method="POST" class="space-y-6">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-300">Nombre
-                                    completo</label>
-                                <input type="text" name="name" id="name" required
-                                    class="mt-1 block w-full bg-brand-dark/50 border border-brand-accent/30 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-brand-light focus:border-brand-light sm:text-sm">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-300">Email
-                                    corporativo</label>
-                                <input type="email" name="email" id="email" required
-                                    class="mt-1 block w-full bg-brand-dark/50 border border-brand-accent/30 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-brand-light focus:border-brand-light sm:text-sm">
-                            </div>
-                            <div>
-                                <label for="subject" class="block text-sm font-medium text-gray-300">Asunto</label>
-                                <select id="subject" name="subject"
-                                    class="mt-1 block w-full bg-brand-dark/50 border border-brand-accent/30 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-brand-light focus:border-brand-light sm:text-sm">
-                                    <option>Información General</option>
-                                    <option>Solicitar Auditoría</option>
-                                    <option>Incidente de Seguridad</option>
-                                    <option>Partners / Alianzas</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-300">Mensaje</label>
-                                <textarea id="message" name="message" rows="4" required
-                                    class="mt-1 block w-full bg-brand-dark/50 border border-brand-accent/30 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-brand-light focus:border-brand-light sm:text-sm"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit"
-                                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-brand-dark bg-brand-light hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-light transition-colors">
-                                    Enviar Consulta
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-sm py-3 px-4 text-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-primary focus:border-brand-primary transition-all duration-200 sm:text-sm"></textarea>
+                        </div>
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-md text-base font-bold text-white bg-brand-primary hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition-all duration-300 transform hover:scale-[1.02]">
+                                Enviar Consulta
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

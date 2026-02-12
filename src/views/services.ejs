@@ -1,15 +1,19 @@
 <%- include('partials/header', { page: 'services' }) %>
 
-    <div class="bg-brand-dark min-h-screen pt-20">
+    <div class="bg-gray-50 min-h-screen pt-20">
 
         <!-- Hero Section Services -->
-        <div class="relative py-20 overflow-hidden">
-            <div class="absolute inset-0 cyber-grid opacity-20 pointer-events-none"></div>
+        <div class="relative py-20 overflow-hidden bg-brand-primary border-b border-gray-200">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80"
+                    alt="Services Background" class="w-full h-full object-cover opacity-20 filter mix-blend-multiply">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/90 to-brand-secondary/80"></div>
+            </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <h1 class="text-4xl font-extrabold text-white sm:text-6xl text-glow mb-6">
+                <h1 class="text-4xl font-extrabold text-white sm:text-6xl mb-6">
                     Servicios Especializados
                 </h1>
-                <p class="max-w-3xl mx-auto text-xl text-gray-400">
+                <p class="max-w-3xl mx-auto text-xl text-blue-100 font-light">
                     Excelencia en seguridad ofensiva y desarrollo tecnológico a medida.
                 </p>
             </div>
@@ -17,164 +21,77 @@
 
         <!-- Navigation Anchor Links -->
         <div
-            class="sticky top-16 z-40 bg-brand-dark/95 backdrop-blur border-y border-brand-accent/20 py-4 hidden md:block">
+            class="sticky top-20 z-40 bg-white/95 backdrop-blur border-b border-gray-200 py-4 hidden md:block shadow-sm">
             <div class="max-w-7xl mx-auto px-4 flex justify-center space-x-12">
-                <a href="#hacking"
-                    class="text-gray-400 hover:text-brand-light font-mono text-sm uppercase tracking-widest transition-colors font-bold">Hacking
-                    Ético</a>
+                <a href="#ciberseguridad"
+                    class="text-gray-500 hover:text-brand-primary font-bold text-sm uppercase tracking-wide transition-all px-4 py-1 rounded-md hover:bg-gray-50">
+                    Ciberseguridad
+                </a>
                 <a href="#proyectos"
-                    class="text-gray-400 hover:text-brand-light font-mono text-sm uppercase tracking-widest transition-colors font-bold">Desarrollo
-                    a Medida</a>
+                    class="text-gray-500 hover:text-brand-primary font-bold text-sm uppercase tracking-wide transition-all px-4 py-1 rounded-md hover:bg-gray-50">
+                    Desarrollo Software
+                </a>
                 <a href="#web"
-                    class="text-gray-400 hover:text-brand-light font-mono text-sm uppercase tracking-widest transition-colors font-bold">Diseño
-                    Web</a>
+                    class="text-gray-500 hover:text-brand-primary font-bold text-sm uppercase tracking-wide transition-all px-4 py-1 rounded-md hover:bg-gray-50">
+                    Diseño Web
+                </a>
             </div>
         </div>
 
         <!-- Section 1: Hacking Ético (Main Focus) -->
-        <section id="hacking" class="py-24 relative border-b border-brand-accent/10">
+        <section id="ciberseguridad" class="py-24 relative border-b border-gray-200 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                    <div class="mb-10 lg:mb-0 relative">
-                        <div class="absolute inset-0 bg-brand-accent/20 blur-3xl rounded-full"></div>
-                        <!-- Terminal Visual -->
+                    <div class="mb-10 lg:mb-0 relative" data-aos="fade-right">
+                        <!-- Professional Image Placeholder -->
                         <div
-                            class="glass-panel p-6 rounded-xl border border-brand-light/20 relative font-mono text-xs overflow-hidden h-96 flex flex-col shadow-2xl">
-                            <div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-2 shrink-0">
-                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                                <span class="text-gray-500 ml-2">root@fastcenter:~</span>
+                            class="rounded-xl shadow-2xl overflow-hidden border border-gray-200 h-96 flex items-center justify-center relative group">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+                                alt="Cybersecurity Operations"
+                                class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-brand-primary/40 group-hover:bg-brand-primary/30 transition-colors duration-500">
                             </div>
-                            <div id="services-terminal"
-                                class="space-y-2 text-green-400 overflow-y-auto flex-grow font-mono">
-                                <!-- Content injected by script -->
+
+                            <div
+                                class="absolute bottom-0 left-0 w-full p-6 bg-white/90 backdrop-blur-md border-t border-gray-200">
+                                <p class="font-bold text-brand-dark">Seguridad de Infraestructura</p>
+                                <p class="text-xs text-gray-500">Monitorización y defensa en tiempo real</p>
                             </div>
                         </div>
-                        <script>
-                            document.addEventListener('DOMContentLoaded', () => {
-                                const terminal = document.getElementById('services-terminal');
-                                if (!terminal) return;
-
-                                const commands = [
-                                    { text: "> nmap -sC -sV -p- 10.10.11.23", delay: 1000 },
-                                    { text: "Starting Nmap 7.94...", delay: 500, color: "text-gray-400" },
-                                    { text: "PORT      STATE SERVICE     VERSION", delay: 200, color: "text-gray-400" },
-                                    { text: "22/tcp    open  ssh         OpenSSH 8.9p1", delay: 100, color: "text-gray-400" },
-                                    { text: "80/tcp    open  http        nginx/1.18.0", delay: 100, color: "text-gray-400" },
-                                    { text: "445/tcp   open  microsoft-ds Windows Server 2019", delay: 100, color: "text-gray-400" },
-                                    { text: "> python3 exploit.py 10.10.11.23", delay: 1500 },
-                                    { text: "[+] Target appears vulnerable to CVE-2024-XXXX", delay: 600, color: "text-yellow-400" },
-                                    { text: "[*] Sending payload...", delay: 400, color: "text-gray-400" },
-                                    { text: "[+] Reverse shell connection established!", delay: 800, color: "text-green-500 font-bold" },
-                                    { text: "C:\\Windows\\system32> whoami", delay: 1000, color: "text-white" },
-                                    { text: "nt authority\\system", delay: 500, color: "text-brand-light font-bold" }
-                                ];
-
-                                let cmdIndex = 0;
-                                let isWriting = false;
-
-                                function typeCommand() {
-                                    if (cmdIndex >= commands.length) {
-                                        setTimeout(() => {
-                                            terminal.innerHTML = '';
-                                            cmdIndex = 0;
-                                            typeCommand();
-                                        }, 5000);
-                                        return;
-                                    }
-
-                                    isWriting = true;
-                                    const cmd = commands[cmdIndex];
-                                    const p = document.createElement('div');
-                                    p.className = cmd.color || 'text-green-400';
-                                    p.style.fontFamily = "'Fira Code', monospace"; // Force font
-                                    terminal.appendChild(p);
-
-                                    terminal.scrollTop = terminal.scrollHeight;
-
-                                    if (cmd.text.startsWith('>') || cmd.text.startsWith('root@')) {
-                                        let charIndex = 0;
-                                        function typeChar() {
-                                            if (charIndex < cmd.text.length) {
-                                                p.textContent += cmd.text.charAt(charIndex);
-                                                charIndex++;
-                                                setTimeout(typeChar, 30);
-                                            } else {
-                                                cmdIndex++;
-                                                setTimeout(typeCommand, cmd.delay);
-                                            }
-                                        }
-                                        typeChar();
-                                    } else {
-                                        p.textContent = cmd.text;
-                                        cmdIndex++;
-                                        setTimeout(typeCommand, cmd.delay);
-                                    }
-                                }
-
-                                // Immediate start fallback if observer fails or element is already visible
-                                try {
-                                    const observer = new IntersectionObserver((entries) => {
-                                        entries.forEach(entry => {
-                                            if (entry.isIntersecting && !isWriting) {
-                                                typeCommand();
-                                                observer.disconnect(); // Run once
-                                            }
-                                        });
-                                    }, { threshold: 0.1 }); // Lower threshold
-                                    observer.observe(terminal);
-                                } catch (e) {
-                                    console.error("Observer failed, starting immediately");
-                                    typeCommand();
-                                }
-                            });
-                        </script>
                     </div>
-                    <div>
+                    <div data-aos="fade-left">
                         <div class="flex items-center mb-4">
-                            <span class="h-px w-12 bg-brand-light mr-4"></span>
-                            <span class="text-brand-light tracking-widest uppercase font-bold text-sm">Nuestro
+                            <span class="h-px w-12 bg-brand-primary mr-4"></span>
+                            <span class="text-brand-primary tracking-widest uppercase font-bold text-sm">Nuestro
                                 Core</span>
                         </div>
-                        <h2 class="text-3xl font-bold text-white mb-6">Auditoría Técnica y Hacking Ético</h2>
-                        <p class="text-gray-400 text-lg mb-6 leading-relaxed">
-                            Es nuestra especialidad. Ponemos a prueba la seguridad de su infraestructura simulando
-                            ataques reales. Realizamos auditorías de <strong>Caja Negra, Gris y Blanca</strong> para
-                            cubrir todos los vectores.
+                        <h2 class="text-3xl font-bold text-brand-dark mb-6">Auditoría de Ciberseguridad</h2>
+                        <p class="text-gray-500 text-lg mb-6 leading-relaxed border-l-4 border-brand-primary pl-4">
+                            Es nuestra especialidad. Evaluamos la seguridad de su infraestructura mediante metodologías
+                            avanzadas de auditoría, identificando vulnerabilidades y garantizando la integridad de sus
+                            activos críticos.
                         </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div class="flex items-start">
-                                <svg class="h-6 w-6 text-brand-accent mr-2" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-gray-300">Pentesting Web</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                            <div
+                                class="flex items-center p-3 border border-gray-200 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                                <span class="text-brand-secondary mr-3 font-bold">✓</span>
+                                <span class="text-gray-700 font-medium">Auditoría Web & API</span>
                             </div>
-                            <div class="flex items-start">
-                                <svg class="h-6 w-6 text-brand-accent mr-2" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                                </svg>
-                                <span class="text-gray-300">Pentesting Active Directory</span>
+                            <div
+                                class="flex items-center p-3 border border-gray-200 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                                <span class="text-brand-secondary mr-3 font-bold">✓</span>
+                                <span class="text-gray-700 font-medium">Auditoría de Infraestructura</span>
                             </div>
-                            <div class="flex items-start">
-                                <svg class="h-6 w-6 text-brand-accent mr-2" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                </svg>
-                                <span class="text-gray-300">Auditoría de Código (SAST/DAST)</span>
+                            <div
+                                class="flex items-center p-3 border border-gray-200 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                                <span class="text-brand-secondary mr-3 font-bold">✓</span>
+                                <span class="text-gray-700 font-medium">Análisis de Código Seguro</span>
                             </div>
-                            <div class="flex items-start">
-                                <svg class="h-6 w-6 text-brand-accent mr-2" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                                </svg>
-                                <span class="text-gray-300">Red Teaming & Ing. Social</span>
+                            <div
+                                class="flex items-center p-3 border border-gray-200 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                                <span class="text-brand-secondary mr-3 font-bold">✓</span>
+                                <span class="text-gray-700 font-medium">Simulaciones de Seguridad</span>
                             </div>
                         </div>
                     </div>
@@ -183,43 +100,54 @@
         </section>
 
         <!-- Section 2: Custom Software -->
-        <section id="proyectos" class="py-24 relative border-b border-brand-accent/10 bg-brand-dark/50">
+        <section id="proyectos" class="py-24 relative border-b border-gray-200 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                    <div class="order-2 lg:order-1">
+                    <div class="order-2 lg:order-1" data-aos="fade-right">
                         <div class="flex items-center mb-4">
-                            <span class="h-px w-12 bg-blue-500 mr-4"></span>
-                            <span class="text-blue-500 tracking-widest uppercase font-bold text-sm">Ingeniería</span>
+                            <span class="h-px w-12 bg-brand-secondary mr-4"></span>
+                            <span
+                                class="text-brand-secondary tracking-widest uppercase font-bold text-sm">Ingeniería</span>
                         </div>
-                        <h2 class="text-3xl font-bold text-white mb-6">Desarrollo de Software a Medida</h2>
-                        <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <h2 class="text-3xl font-bold text-brand-dark mb-6">Desarrollo de Software a Medida</h2>
+                        <p class="text-gray-500 text-lg mb-6 leading-relaxed border-l-4 border-brand-secondary pl-4">
                             Creamos soluciones tecnológicas personalizadas para digitalizar procesos de negocio. Nos
                             diferenciamos en que <strong>integramos la seguridad desde el diseño</strong> (Secure by
                             Design), garantizando productos robustos y escalables.
                         </p>
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <div class="text-brand-accent mr-3 font-bold">></div>
-                                <span class="text-white font-medium text-lg">Aplicaciones de Gestión Interna (ERPs/CRMs
-                                    a medida)</span>
+                        <ul class="space-y-4 mb-8 text-sm">
+                            <li class="flex items-start text-gray-600">
+                                <span class="text-brand-secondary mr-2 font-bold">✓</span>
+                                Aplicaciones de Gestión Interna (ERPs/CRMs)
                             </li>
-                            <li class="flex items-start">
-                                <div class="text-brand-accent mr-3 font-bold">></div>
-                                <span class="text-white font-medium text-lg">Integración de Sistemas y APIs</span>
+                            <li class="flex items-start text-gray-600">
+                                <span class="text-brand-secondary mr-2 font-bold">✓</span>
+                                Integración de Sistemas y APIs
                             </li>
-                            <li class="flex items-start">
-                                <div class="text-brand-accent mr-3 font-bold">></div>
-                                <span class="text-white font-medium text-lg">Automatización de Procesos</span>
+                            <li class="flex items-start text-gray-600">
+                                <span class="text-brand-secondary mr-2 font-bold">✓</span>
+                                Automatización de Procesos
                             </li>
                         </ul>
                     </div>
-                    <div class="mb-10 lg:mb-0 lg:order-2 relative">
-                        <div class="absolute inset-0 bg-blue-600/10 blur-3xl rounded-full"></div>
-                        <div class="glass-panel p-8 rounded-xl text-center">
-                            <div class="text-6xl mb-4 text-blue-400">⚙️</div>
-                            <h3 class="text-xl font-bold text-white mb-2">Código Seguro</h3>
-                            <p class="text-gray-400 text-sm">Auditamos cada línea de código que escribimos para evitar
-                                las vulnerabilidades OWASP Top 10.</p>
+                    <div class="mb-10 lg:mb-0 lg:order-2 relative" data-aos="fade-left">
+                        <div
+                            class="rounded-xl shadow-2xl overflow-hidden border border-gray-200 h-96 flex items-center justify-center relative group ml-4">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                                alt="Software Development"
+                                class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-brand-secondary/20 group-hover:bg-brand-secondary/10 transition-colors duration-500">
+                            </div>
+
+                            <!-- Glass Floating Card inside Image -->
+                            <div
+                                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 glass-panel p-6 rounded-xl text-center border border-white/40 shadow-xl bg-white/30 backdrop-blur-md">
+                                <div class="text-4xl mb-2">⚙️</div>
+                                <h3 class="text-lg font-bold text-white mb-1 shadow-black drop-shadow-md">CODE_SECURE
+                                </h3>
+                                <p class="text-white text-xs font-medium drop-shadow-md">Secure by Design</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,58 +155,46 @@
         </section>
 
         <!-- Section 3: Web Development -->
-        <section id="web" class="py-24 relative">
+        <section id="web" class="py-24 relative bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                    <div class="mb-10 lg:mb-0 relative">
-                        <div class="absolute inset-0 bg-purple-600/10 blur-3xl rounded-full"></div>
+                    <div class="mb-10 lg:mb-0 relative" data-aos="zoom-in">
                         <div
-                            class="glass-panel p-8 rounded-xl relative border border-purple-500/30 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-500">
-                            <!-- Mockup Web -->
-                            <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-600">
-                                <div class="bg-gray-700 h-6 flex items-center px-2 space-x-1">
-                                    <div class="w-2 h-2 rounded-full bg-red-400"></div>
-                                    <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
-                                    <div class="w-2 h-2 rounded-full bg-green-400"></div>
-                                </div>
-                                <div class="p-4 bg-gray-900 h-32 flex flex-col items-center justify-center">
-                                    <span class="text-brand-light font-bold text-lg">Tu Empresa</span>
-                                    <span class="text-gray-500 text-xs mt-2">Moderno • Rápido • Seguro</span>
-                                    <button
-                                        class="mt-4 bg-purple-600 text-white text-xs px-3 py-1 rounded">Contactar</button>
-                                </div>
+                            class="rounded-xl shadow-2xl overflow-hidden border border-gray-200 h-80 flex items-center justify-center relative group transform lg:-rotate-1 hover:rotate-0 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                                alt="Web Design and Analytics"
+                                class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <div
+                                class="absolute inset-0 bg-purple-900/10 group-hover:bg-transparent transition-colors duration-500">
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-left">
                         <div class="flex items-center mb-4">
-                            <span class="h-px w-12 bg-purple-500 mr-4"></span>
-                            <span class="text-purple-500 tracking-widest uppercase font-bold text-sm">Presencia
-                                Digital</span>
+                            <span class="h-px w-12 bg-purple-600 mr-4"></span>
+                            <span class="text-purple-600 tracking-widest uppercase font-bold text-sm">Frontend</span>
                         </div>
-                        <h2 class="text-3xl font-bold text-white mb-6">Diseño y Desarrollo Web</h2>
-                        <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <h2 class="text-3xl font-bold text-brand-dark mb-6">Diseño y Desarrollo Web</h2>
+                        <p class="text-gray-500 text-lg mb-6 leading-relaxed border-l-4 border-purple-600 pl-4">
                             Desarrollamos sitios web corporativos de alto impacto visual y rendimiento. Combinamos
                             estética moderna con las mejores prácticas de velocidad de carga y SEO técnico.
                         </p>
-                        <div class="flex flex-wrap gap-3">
+                        <div class="flex flex-wrap gap-3 text-xs font-medium">
                             <span
-                                class="bg-purple-900/80 text-white px-4 py-2 rounded-full text-sm border border-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.2)]">Landing
+                                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full border border-purple-200">Landing
                                 Pages</span>
                             <span
-                                class="bg-purple-900/80 text-white px-4 py-2 rounded-full text-sm border border-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.2)]">Webs
-                                Corporativas</span>
+                                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full border border-purple-200">Corporativas</span>
                             <span
-                                class="bg-purple-900/80 text-white px-4 py-2 rounded-full text-sm border border-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.2)]">E-commerce</span>
+                                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full border border-purple-200">E-commerce</span>
                             <span
-                                class="bg-purple-900/80 text-white px-4 py-2 rounded-full text-sm border border-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.2)]">Optimización
-                                SEO</span>
+                                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full border border-purple-200">SEO
+                                Optimization</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
 
     <%- include('partials/footer') %>

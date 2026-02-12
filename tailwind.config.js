@@ -1,35 +1,42 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,ejs}"],
   theme: {
     extend: {
       colors: {
         brand: {
-          light: '#66FCF1', // Neon Blue/Cyan
-          dark: '#0B0C10',  // Deep Black/Gray
-          accent: '#45A29E', // Muted Cyan
-          secondary: '#1F2833', // Dark Gray Blue
-          white: '#C5C6C7', // Light Gray (Text)
-        },
-        surface: {
-          bg: '#0B0C10',
-          card: 'rgba(31, 40, 51, 0.7)', // Glass effect base
+          primary: '#003366',    // Deep Corporate Blue
+          secondary: '#00AEEF',  // Bright Cyan/Blue
+          accent: '#7dd3fc',     // Sky Blue (Gradient/Accents)
+          dark: '#111827',       // Dark Gray
+          light: '#F3F4F6',      // Light Gray
+          white: '#FFFFFF',      // Pure White
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'],
+        sans: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(to right, #003366, #004080)',
       },
       animation: {
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
+        blob: "blob 7s infinite",
       },
       keyframes: {
-        glow: {
-          '0%': { boxShadow: '0 0 5px #45A29E' },
-          '100%': { boxShadow: '0 0 20px #66FCF1, 0 0 10px #45A29E' },
-        }
-      }
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+      },
     },
   },
   plugins: [],
