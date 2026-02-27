@@ -30,6 +30,7 @@
                     animation: {
                         'blob': 'blob 7s infinite',
                         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'entrance-slide-up': 'slideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
                     },
                     keyframes: {
                         blob: {
@@ -37,6 +38,10 @@
                             '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
                             '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
                             '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
                         }
                     }
                 }
@@ -94,10 +99,40 @@
                         class="<%= (typeof page !== 'undefined' && page === 'home') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
                         Inicio
                     </a>
-                    <a href="/services"
-                        class="<%= (typeof page !== 'undefined' && page === 'services') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
-                        Servicios
-                    </a>
+                    <!-- Servicios Dropdown -->
+                    <div class="relative group h-full flex items-center">
+                        <button
+                            class="<%= (typeof page !== 'undefined' && page.startsWith('services')) ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent outline-none cursor-pointer">
+                            Servicios
+                            <i
+                                class="fa-solid fa-chevron-down ml-1 text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-0 w-64 bg-white rounded-b-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="py-2">
+                                <a href="/services/cybersecurity"
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors border-l-2 border-transparent hover:border-brand-primary">
+                                    <div class="font-bold">Ciberseguridad</div>
+                                    <div class="text-xs text-gray-400 font-normal mt-0.5">Auditoría y protección
+                                        avanzada</div>
+                                </a>
+                                <a href="/services/software"
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors border-l-2 border-transparent hover:border-brand-primary">
+                                    <div class="font-bold">Desarrollo de Software</div>
+                                    <div class="text-xs text-gray-400 font-normal mt-0.5">Soluciones a medida Secure By
+                                        Design</div>
+                                </a>
+                                <a href="/services/web"
+                                    class="block px-4 py-3 text-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors border-l-2 border-transparent hover:border-brand-primary">
+                                    <div class="font-bold">Diseño Web</div>
+                                    <div class="text-xs text-gray-400 font-normal mt-0.5">Presencia digital de alto
+                                        rendimiento</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="/about"
                         class="<%= (typeof page !== 'undefined' && page === 'about') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
                         Nosotros

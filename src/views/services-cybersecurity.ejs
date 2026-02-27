@@ -1,0 +1,166 @@
+<%- include('partials/header', { page: 'services-cybersecurity' }) %>
+
+    <div class="min-h-screen">
+
+
+        <!-- Main Content (Staggered Grid) -->
+        <section class="py-24 relative overflow-hidden" style="background: #000;">
+            <!-- Background HTML5 Cyber Video - Fully Visible -->
+            <video autoplay loop muted playsinline
+                style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+                <source src="/videos/hacking-bg.mp4" type="video/mp4">
+            </video>
+
+            <!-- Subtle overlay so white cards remain readable -->
+            <div style="position:absolute; inset:0; z-index:1; background:rgba(0,5,25,0.50);"
+                class="pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 animate-entrance-slide-up">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-4xl font-extrabold text-white tracking-tight">Ciberseguridad en nuestro ADN</h2>
+                    <p class="mt-4 text-xl text-blue-200 max-w-2xl mx-auto font-light">Servicios proactivos y
+                        estratégicos diseñados para descubrir debilidades antes de que sean problemas reales.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-24 mt-32 mb-20">
+
+                    <!-- Top Row -->
+
+                    <!-- Card 1: Auditorías de código -->
+                    <div data-aos="fade-up" data-aos-delay="100"
+                        style="background: rgba(15,20,50,0.70); backdrop-filter: blur(12px); border: 1px solid rgba(108,92,231,0.35);"
+                        class="rounded-[2rem] p-10 shadow-[0_8px_40px_rgba(108,92,231,0.15)] hover:shadow-[0_12px_50px_rgba(108,92,231,0.35)] transition-all duration-500 group hover:border-[#6c5ce7]/70">
+                        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+                            style="background: rgba(108,92,231,0.2);">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">💻</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Auditorías de código</h3>
+                        <p class="text-[15px] text-slate-300 leading-relaxed font-light mb-4">
+                            Si tu empresa desarrolla software propio, nuestros expertos revisan el código fuente línea
+                            por línea para detectar vulnerabilidades críticas: inyecciones, gestión insegura de
+                            sesiones, exposición de datos sensibles o lógica de negocio defectuosa.
+                        </p>
+                        <p class="text-[14px] text-slate-400 leading-relaxed font-light">
+                            Entregamos un informe detallado con severidad, evidencias y recomendaciones de remediación
+                            priorizadas para que tu equipo actúe de forma inmediata.
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Auditoría y Pentesting (Shifted Up) -->
+                    <div data-aos="fade-up" data-aos-delay="200"
+                        class="md:-translate-y-16 lg:-translate-y-24 rounded-[2rem] p-10 shadow-[0_8px_40px_rgba(108,92,231,0.15)] hover:shadow-[0_12px_50px_rgba(108,92,231,0.35)] transition-all duration-500 group hover:border-[#6c5ce7]/70"
+                        style="background: rgba(15,20,50,0.70); backdrop-filter: blur(12px); border: 1px solid rgba(108,92,231,0.35);">
+                        <div style="background: rgba(108,92,231,0.2);"
+                            class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🛡️</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Auditoría y Pentesting</h3>
+                        <p class="text-[15px] text-slate-300 leading-relaxed font-light mb-4">
+                            Simulamos el comportamiento de un atacante real contra tu infraestructura: servidores,
+                            aplicaciones web, APIs y redes internas. Identificamos qué puede ser explotado, cómo, y con
+                            qué impacto antes de que alguien lo haga de verdad.
+                        </p>
+                        <p class="text-[14px] text-slate-400 leading-relaxed font-light">
+                            Incluye pruebas de caja negra, caja gris y caja blanca, con metodologías OWASP, PTES y
+                            OSSTMM para una cobertura exhaustiva.
+                        </p>
+                    </div>
+
+                    <!-- Card 3: Simulación de Ataques -->
+                    <div data-aos="fade-up" data-aos-delay="300"
+                        style="background: rgba(15,20,50,0.70); backdrop-filter: blur(12px); border: 1px solid rgba(108,92,231,0.35);"
+                        class="rounded-[2rem] p-10 shadow-[0_8px_40px_rgba(108,92,231,0.15)] hover:shadow-[0_12px_50px_rgba(108,92,231,0.35)] transition-all duration-500 group hover:border-[#6c5ce7]/70">
+                        <div style="background: rgba(108,92,231,0.2);"
+                            class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">👻</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Simulación de Ataques</h3>
+                        <p class="text-[15px] text-slate-300 leading-relaxed font-light mb-4">
+                            Operaciones <strong class="text-purple-300 font-semibold">Red Team</strong> de ciclo
+                            completo. Emulamos las tácticas, técnicas y procedimientos (TTPs) de grupos APT reales para
+                            poner a prueba tu capacidad de detección, contención y respuesta en condiciones lo más
+                            cercanas posibles a un ataque real.
+                        </p>
+                        <p class="text-[14px] text-slate-400 leading-relaxed font-light">
+                            Incluye campañas de phishing dirigido, escalada de privilegios, movimiento lateral y
+                            exfiltración controlada de datos.
+                        </p>
+                    </div>
+
+                    <!-- Bottom Row -->
+
+                    <!-- Card 4: Gestión de Vulnerabilidades -->
+                    <div data-aos="fade-up" data-aos-delay="400"
+                        style="background: rgba(15,20,50,0.70); backdrop-filter: blur(12px); border: 1px solid rgba(108,92,231,0.35);"
+                        class="rounded-[2rem] p-10 shadow-[0_8px_40px_rgba(108,92,231,0.15)] hover:shadow-[0_12px_50px_rgba(108,92,231,0.35)] transition-all duration-500 group hover:border-[#6c5ce7]/70">
+                        <div style="background: rgba(108,92,231,0.2);"
+                            class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🐛</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Gestión de Vulnerabilidades</h3>
+                        <p class="text-[15px] text-slate-300 leading-relaxed font-light mb-4">
+                            Proceso continuo de identificación y remediación. Rastreamos toda tu superficie de ataque en
+                            busca de nuevas vulnerabilidades CVE, software desactualizado y configuraciones inseguras
+                            antes de que los atacantes lo hagan.
+                        </p>
+                        <p class="text-[14px] text-slate-400 leading-relaxed font-light">
+                            Integración con tus workflows de DevSecOps. Dashboard de seguimiento en tiempo real con CVSS
+                            scoring y priorización automática según impacto en negocio.
+                        </p>
+                    </div>
+
+                    <!-- Card 5: CISO as a Service (Shifted Down) -->
+                    <div data-aos="fade-up" data-aos-delay="500"
+                        class="md:translate-y-16 lg:translate-y-24 rounded-[2rem] p-10 shadow-[0_8px_40px_rgba(108,92,231,0.15)] hover:shadow-[0_12px_50px_rgba(108,92,231,0.35)] transition-all duration-500 group hover:border-[#6c5ce7]/70"
+                        style="background: rgba(15,20,50,0.70); backdrop-filter: blur(12px); border: 1px solid rgba(108,92,231,0.35);">
+                        <div style="background: rgba(108,92,231,0.2);"
+                            class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">👔</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">CISO as a Service</h3>
+                        <p class="text-[15px] text-slate-300 leading-relaxed font-light mb-4">
+                            Dirección estratégica de seguridad a tu medida sin el coste de un CISO en plantilla.
+                            Proveemos un <strong class="text-purple-300 font-semibold">Director de Seguridad
+                                externalizado</strong> que diseña y ejecuta el Plan Director de Seguridad, gestiona
+                            proveedores y actúa como interlocutor ante auditorías y reguladores.
+                        </p>
+                        <p class="text-[14px] text-slate-400 leading-relaxed font-light">
+                            Ideal para medianas empresas que necesitan madurez en ciberseguridad sin los altos costes
+                            salariales de un perfil senior dedicado.
+                        </p>
+                    </div>
+
+                    <!-- Card 6: Formación / Charlas -->
+                    <div data-aos="fade-up" data-aos-delay="600"
+                        style="background: rgba(15,20,50,0.70); backdrop-filter: blur(12px); border: 1px solid rgba(108,92,231,0.35);"
+                        class="rounded-[2rem] p-10 shadow-[0_8px_40px_rgba(108,92,231,0.15)] hover:shadow-[0_12px_50px_rgba(108,92,231,0.35)] transition-all duration-500 group hover:border-[#6c5ce7]/70">
+                        <div style="background: rgba(108,92,231,0.2);"
+                            class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🎓</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Formación y Charlas</h3>
+                        <p class="text-[15px] text-slate-300 leading-relaxed font-light mb-4">
+                            El eslabón más débil en cualquier empresa es el factor humano. Impartimos sesiones de
+                            concienciación, talleres técnicos y simulacros de phishing personalizados para que tu
+                            plantilla sea tu primera línea de defensa.
+                        </p>
+                        <p class="text-[14px] text-slate-400 leading-relaxed font-light">
+                            Formatos disponibles: charlas presenciales, píldoras online, campañas de phishing simulado y
+                            CTFs internos para equipos técnicos.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <%- include('partials/footer') %>

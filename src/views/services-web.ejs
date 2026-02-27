@@ -1,0 +1,134 @@
+<%- include('partials/header', { page: 'services-web' }) %>
+
+    <div class="min-h-screen">
+
+
+
+        <!-- Main Content -->
+        <section class="py-24 relative overflow-hidden" style="background: #000;">
+            <!-- Background HTML5 Video - Fully Visible -->
+            <video autoplay loop muted playsinline
+                style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+                <source src="/videos/web-bg.mp4" type="video/mp4">
+            </video>
+            <!-- Subtle overlay for readability -->
+            <div style="position:absolute; inset:0; z-index:1; background:rgba(0,5,25,0.50);"
+                class="pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-entrance-slide-up"
+                style="position:relative; z-index:2;">
+
+                <!-- Hero-style Header for Web Design -->
+                <div class="text-center mb-20" data-aos="fade-down">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-bold uppercase tracking-widest mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
+                        </span>
+                        Arquitectura Visual & Experiencia
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight">
+                        Escaparates <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Digitales</span>
+                    </h1>
+                    <p class="max-w-2xl mx-auto text-slate-300 text-lg font-light leading-relaxed">
+                        Desarrollamos interfaces que fusionan la estética de vanguardia con la ingeniería de
+                        rendimiento,
+                        creando espacios digitales que no solo atraen, sino que convierten y perduran.
+                    </p>
+                </div>
+
+                <!-- Showcase Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
+
+                    <!-- 1. Corporate Excellence (Large Image & Text) -->
+                    <div class="group relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900/40 backdrop-blur-xl hover:border-brand-primary/30 transition-all duration-700"
+                        data-aos="fade-right">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                alt="Corporate Web Design">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent">
+                            </div>
+                        </div>
+                        <div class="p-10 relative">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-brand-primary/20 flex items-center justify-center mb-6 text-brand-primary">
+                                <span class="text-4xl"
+                                    style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🏢</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-4">Webs Corporativas de Élite</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Proyectamos la autoridad de su marca mediante arquitecturas visuales impecables.
+                                Diseñamos ecosistemas digitales donde la navegación intuitiva y la solidez institucional
+                                conviven para transmitir confianza absoluta a sus clientes más exigentes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. High-Conversion Landings -->
+                    <div class="group relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900/40 backdrop-blur-xl hover:border-brand-secondary/30 transition-all duration-700"
+                        data-aos="fade-left">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                alt="High Conversion">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent">
+                            </div>
+                        </div>
+                        <div class="p-10 relative">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-brand-secondary/20 flex items-center justify-center mb-6 text-brand-secondary">
+                                <span class="text-4xl"
+                                    style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🚀</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-4">Ingeniería de Conversión</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Transformamos el tráfico en resultados tangibles. Nuestras landing pages son
+                                herramientas
+                                de alta precisión táctica, diseñadas con jerarquías visuales estratégicas que guían al
+                                usuario hacia la acción con total fluidez y persuasión visual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3. E-commerce (Full-width Style) -->
+                    <div class="lg:col-span-2 group relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900/40 backdrop-blur-xl hover:border-emerald-500/30 transition-all duration-700"
+                        data-aos="fade-up">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 p-10 lg:p-14 flex flex-col justify-center">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400">
+                                    <span class="text-4xl"
+                                        style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🛒</span>
+                                </div>
+                                <h3 class="text-3xl font-bold text-white mb-4">E-commerce de Alto Escalamiento</h3>
+                                <p class="text-slate-400 font-light leading-relaxed">
+                                    Construimos centros comerciales digitales preparados para el futuro.
+                                    Priorizamos la seguridad transaccional y una experiencia de compra sin fricciones,
+                                    optimizando cada paso del embudo para maximizar el valor medio de cada pedido
+                                    y la fidelidad de sus clientes.
+                                </p>
+                            </div>
+                            <div class="md:w-1/2 aspect-square md:aspect-auto overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+                                    class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                    alt="E-commerce Solutions">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-slate-950 via-transparent to-transparent hidden md:block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <%- include('partials/footer') %>

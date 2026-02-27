@@ -1,0 +1,153 @@
+<%- include('partials/header', { page: 'services-software' }) %>
+
+    <div class="min-h-screen">
+
+        <!-- Main Content -->
+        <section class="py-24 relative overflow-hidden" style="background: #000;">
+            <!-- Background HTML5 Video -->
+            <video autoplay loop muted playsinline
+                style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+                <source src="/videos/software-bg.mp4" type="video/mp4">
+            </video>
+
+            <!-- Dark Overlay -->
+            <div style="position:absolute; inset:0; z-index:1; background:rgba(0,5,25,0.65);"
+                class="pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 animate-entrance-slide-up">
+
+                <!-- Section Header -->
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <div
+                        class="inline-flex items-center px-4 py-1 rounded-full border border-brand-primary/30 bg-brand-primary/10 text-brand-secondary text-xs font-bold tracking-widest uppercase mb-4">
+                        <i class="fa-solid fa-code mr-2"></i> Engineering Excellence
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">Proyectos a
+                        Medida,<br><span class="text-brand-primary">Seguridad por Diseño</span></h2>
+                    <p class="mt-6 text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+                        No solo picamos código; construimos arquitecturas sólidas, escalables y blindadas desde la
+                        primera línea.
+                    </p>
+                </div>
+
+                <!-- Technical Bento Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mt-16">
+
+                    <!-- 1. Custom ERP/CRM (Large Content) -->
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+                            <div class="flex-1">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-brand-primary/20 flex items-center justify-center mb-6 text-brand-primary">
+                                    <span class="text-3xl"
+                                        style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">⚙️</span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white mb-4">Sistemas de Gestión a Medida</h3>
+                                <p class="text-slate-300 font-light leading-relaxed mb-1">
+                                    Diseñamos el núcleo digital de su organización con arquitecturas que se adaptan con
+                                    precisión a sus flujos de trabajo. Centralizamos la información para permitir una
+                                    automatización profunda, eliminando silos y maximizando la eficiencia operativa en
+                                    cada departamento con herramientas que evolucionan con su empresa.
+                                </p>
+                            </div>
+                            <div
+                                class="hidden md:block w-48 h-full bg-gradient-to-br from-brand-primary/10 to-transparent border-l border-white/5 rounded-2xl relative overflow-hidden">
+                                <div class="absolute inset-0 opacity-20 flex items-center justify-center">
+                                    <i class="fa-solid fa-layer-group text-8xl fa-bounce"
+                                        style="--fa-animation-duration: 4s;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Mobile App Dev -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-brand-secondary/20 flex items-center justify-center mb-6 text-brand-secondary">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">📱</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Estrategia Móvil</h3>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">
+                            Proyectamos su visión a los dispositivos de sus clientes con apps de alto rendimiento e
+                            interfaces intuitivas que garantizan una interacción fluida y tasas de retención superiores.
+                        </p>
+                    </div>
+
+                    <!-- 3. Frontend Moderno -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-6 text-blue-400">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">💻</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Interfaces de Alto Impacto</h3>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">
+                            Construimos la cara visible de su tecnología con un enfoque absoluto en la velocidad y la
+                            interactividad avanzada, manejando flujos de datos complejos con total ligereza.
+                        </p>
+                    </div>
+
+                    <!-- 4. Backend & Architecture -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-brand-primary/30 bg-gradient-to-br from-brand-primary/10 to-slate-900/60 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-brand-primary flex items-center justify-center mb-6 text-white shadow-[0_0_20px_rgba(108,92,231,0.5)]">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🏗️</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-shadow-sm">Arquitecturas Escalables</h3>
+                        <p class="text-slate-300 text-sm font-light leading-relaxed">
+                            Diseñamos el núcleo de sus aplicaciones para un crecimiento ilimitado, gestionando volúmenes
+                            masivos de datos con seguridad embebida y alta disponibilidad constante.
+                        </p>
+                    </div>
+
+                    <!-- 5. Integraciones API -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
+                        data-aos="fade-up" data-aos-delay="500">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-6 text-purple-400">
+                            <span class="text-3xl"
+                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🔗</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Interconectividad Empresarial</h3>
+                        <p class="text-slate-400 text-sm font-light leading-relaxed">
+                            Capas de integración que conectan infraestructuras heterogéneas de forma segura, permitiendo
+                            que la información fluya sin fricciones entre todos sus servicios digitales.
+                        </p>
+                    </div>
+
+                    <!-- 6. Cloud Engineering (Banner-like) -->
+                    <div class="md:col-span-12 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
+                        data-aos="fade-up" data-aos-delay="600">
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+                                <span class="text-4xl"
+                                    style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">☁️</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Ingeniería Cloud Native</h3>
+                                <p class="text-slate-400 text-sm font-light">Diseñamos entornos resilientes y seguros
+                                    que aprovechan al máximo los servicios gestionados en la nube para garantizar
+                                    disponibilidad total y escalabilidad automática sin las limitaciones de los sistemas
+                                    convencionales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <%- include('partials/footer') %>

@@ -6,14 +6,29 @@ exports.index = (req, res) => {
     });
 };
 
-exports.services = (req, res) => {
-    res.render('services', {
-        title: 'Servicios',
+exports.cybersecurity = (req, res) => {
+    res.render('services-cybersecurity', {
+        title: 'Ciberseguridad',
         appName: process.env.APP_NAME || 'FastCenter',
-        page: 'services'
+        page: 'services-cybersecurity'
     });
 };
 
+exports.software = (req, res) => {
+    res.render('services-software', {
+        title: 'Desarrollo de Software',
+        appName: process.env.APP_NAME || 'FastCenter',
+        page: 'services-software'
+    });
+};
+
+exports.web = (req, res) => {
+    res.render('services-web', {
+        title: 'Diseño y Desarrollo Web',
+        appName: process.env.APP_NAME || 'FastCenter',
+        page: 'services-web'
+    });
+};
 exports.about = (req, res) => {
     res.render('about', {
         title: 'Nosotros',

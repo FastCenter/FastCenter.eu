@@ -3,7 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', homeController.index);
-router.get('/services', (req, res, next) => { console.log('Hit /services'); next(); }, homeController.services);
+router.get('/services/cybersecurity', homeController.cybersecurity);
+router.get('/services/software', homeController.software);
+router.get('/services/web', homeController.web);
 router.get('/about', homeController.about);
 router.get('/careers', homeController.careers);
 router.get('/contact', homeController.contactPage);
