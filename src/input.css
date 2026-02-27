@@ -25,7 +25,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-primary border-2 border-transparent text-white font-semibold py-3 px-8 rounded-md hover:bg-brand-secondary shadow-md transition-all duration-300 ease-in-out cursor-pointer inline-flex items-center justify-center;
+    @apply bg-brand-primary border-2 border-transparent text-white font-semibold py-3 px-8 rounded-md shadow-md cursor-pointer inline-flex items-center justify-center hover:bg-brand-primary hover:text-white;
   }
 
   .section-container {
