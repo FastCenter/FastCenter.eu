@@ -1,149 +1,271 @@
 <%- include('partials/header', { page: 'services-software' }) %>
 
-    <div class="min-h-screen">
-
-        <!-- Main Content -->
-        <section class="py-24 relative overflow-hidden" style="background: #000;">
-            <!-- Background HTML5 Video -->
-            <video autoplay loop muted playsinline
-                style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
-                <source src="/videos/software-bg.mp4" type="video/mp4">
-            </video>
-
-            <!-- Dark Overlay -->
-            <div style="position:absolute; inset:0; z-index:1; background:rgba(0,5,25,0.65);"
-                class="pointer-events-none"></div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 animate-entrance-slide-up">
-
-                <!-- Section Header -->
-                <div class="text-center mb-20" data-aos="fade-up">
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">Proyectos a
-                        Medida,<br><span class="text-brand-secondary">Seguridad por Diseño</span></h2>
-                    <p class="mt-6 text-xl text-white font-normal leading-relaxed max-w-3xl mx-auto">
-                        No solo picamos código; construimos arquitecturas sólidas, escalables y blindadas desde la
-                        primera línea.
-                    </p>
+    <div class="bg-white">
+        <!-- 1. Hero Section -->
+        <div class="relative bg-brand-dark min-h-[50vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1920&q=80"
+                    alt="Desarrollo de Software" class="w-full h-full object-cover opacity-30 filter blur-[2px]">
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/90 via-brand-dark/70 to-brand-dark/95">
                 </div>
+            </div>
+            <div class="max-w-4xl mx-auto relative z-10 px-4 text-center animate-entrance-slide-up">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-8">Arquitecturas que impulsan tu negocio</h2>
+                <p class="text-xl text-blue-100/90 leading-relaxed max-w-3xl mx-auto">
+                    Diseñamos el núcleo digital de tu organización con soluciones robustas que permiten una
+                    automatización profunda y máxima eficiencia operativa.
+                </p>
+            </div>
+        </div>
 
-                <!-- Technical Bento Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mt-16">
 
-                    <!-- 1. Custom ERP/CRM (Large Content) -->
-                    <div class="md:col-span-8 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
-                            <div class="flex-1">
-                                <div
-                                    class="w-12 h-12 rounded-xl bg-brand-primary/20 flex items-center justify-center mb-6 text-brand-primary">
-                                    <span class="text-3xl"
-                                        style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">⚙️</span>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white mb-4">Sistemas de Gestión a Medida</h3>
-                                <p class="text-white font-normal leading-relaxed mb-1">
-                                    Diseñamos el núcleo digital de su organización con arquitecturas que se adaptan con
-                                    precisión a sus flujos de trabajo. Centralizamos la información para permitir una
-                                    automatización profunda, eliminando silos y maximizando la eficiencia operativa en
-                                    cada departamento con herramientas que evolucionan con su empresa.
-                                </p>
-                            </div>
+
+        <!-- 4. Methodology Section (Split) -->
+        <section class="py-24 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                    <div class="lg:w-1/2 w-full" data-aos="fade-left">
+                        <div class="relative group">
                             <div
-                                class="hidden md:block w-48 h-full bg-gradient-to-br from-brand-primary/10 to-transparent border-l border-white/5 rounded-2xl relative overflow-hidden">
-                                <div class="absolute inset-0 opacity-20 flex items-center justify-center">
-                                    <i class="fa-solid fa-layer-group text-8xl fa-bounce"
-                                        style="--fa-animation-duration: 4s;"></i>
-                                </div>
+                                class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-brand-primary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000">
                             </div>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                                alt="Ciclo de Desarrollo Ágil"
+                                class="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover">
                         </div>
                     </div>
-
-                    <!-- 2. Mobile App Dev -->
-                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-brand-secondary/20 flex items-center justify-center mb-6 text-brand-secondary">
-                            <span class="text-3xl"
-                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">📱</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Estrategia Móvil</h3>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">
-                            Proyectamos su visión a los dispositivos de sus clientes con apps de alto rendimiento e
-                            interfaces intuitivas que garantizan una interacción fluida y tasas de retención superiores.
-                        </p>
-                    </div>
-
-                    <!-- 3. Frontend Moderno -->
-                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-6 text-blue-400">
-                            <span class="text-3xl"
-                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">💻</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Interfaces de Alto Impacto</h3>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">
-                            Construimos la cara visible de su tecnología con un enfoque absoluto en la velocidad y la
-                            interactividad avanzada, manejando flujos de datos complejos con total ligereza.
-                        </p>
-                    </div>
-
-                    <!-- 4. Backend & Architecture -->
-                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-brand-primary/30 bg-gradient-to-br from-brand-primary/10 to-slate-900/60 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
-                        data-aos="fade-up" data-aos-delay="400">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-brand-primary flex items-center justify-center mb-6 text-white shadow-[0_0_20px_rgba(108,92,231,0.5)]">
-                            <span class="text-3xl"
-                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🏗️</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 text-shadow-sm">Arquitecturas Escalables</h3>
-                        <p class="text-slate-300 text-sm font-light leading-relaxed">
-                            Diseñamos el núcleo de sus aplicaciones para un crecimiento ilimitado, gestionando volúmenes
-                            masivos de datos con seguridad embebida y alta disponibilidad constante.
-                        </p>
-                    </div>
-
-                    <!-- 5. Integraciones API -->
-                    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
-                        data-aos="fade-up" data-aos-delay="500">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-6 text-purple-400">
-                            <span class="text-3xl"
-                                style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">🔗</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Interconectividad Empresarial</h3>
-                        <p class="text-slate-400 text-sm font-light leading-relaxed">
-                            Capas de integración que conectan infraestructuras heterogéneas de forma segura, permitiendo
-                            que la información fluya sin fricciones entre todos sus servicios digitales.
-                        </p>
-                    </div>
-
-                    <!-- 6. Cloud Engineering (Banner-like) -->
-                    <div class="md:col-span-12 group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 backdrop-blur-xl p-8 hover:border-brand-primary/50 transition-all duration-500"
-                        data-aos="fade-up" data-aos-delay="600">
-                        <div class="flex items-center gap-6">
-                            <div
-                                class="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
-                                <span class="text-4xl"
-                                    style="font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;">☁️</span>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-white mb-1">Ingeniería Cloud Native</h3>
-                                <p class="text-slate-400 text-sm font-light">Diseñamos entornos resilientes y seguros
-                                    que aprovechan al máximo los servicios gestionados en la nube para garantizar
-                                    disponibilidad total y escalabilidad automática sin las limitaciones de los sistemas
-                                    convencionales.</p>
-                            </div>
+                    <div class="lg:w-1/2 w-full" data-aos="fade-right">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-primary mb-3 block">¿Cómo
+                            trabajamos?</span>
+                        <h2 class="text-4xl font-bold text-brand-dark mb-8">Ciclo de Desarrollo</h2>
+                        <ul class="space-y-6 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="h-2 w-2 bg-brand-secondary rounded-full mt-2.5 mr-4 shrink-0"></span>
+                                <p><strong>Análisis de Requerimientos:</strong> Entendemos profundamente tu negocio para
+                                    diseñar la solución técnica perfecta.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="h-2 w-2 bg-brand-secondary rounded-full mt-2.5 mr-4 shrink-0"></span>
+                                <p><strong>Arquitectura Escalable:</strong> Diseñamos sistemas que crecen contigo,
+                                    utilizando las últimas tecnologías de nube.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="h-2 w-2 bg-brand-secondary rounded-full mt-2.5 mr-4 shrink-0"></span>
+                                <p><strong>Desarrollo Ágil & Seguro:</strong> Iteraciones rápidas con pruebas de
+                                    seguridad constantes en cada fase del proyecto.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="h-2 w-2 bg-brand-secondary rounded-full mt-2.5 mr-4 shrink-0"></span>
+                                <p><strong>Despliegue Continuo:</strong> Implementamos pipelines de CI/CD para
+                                    garantizar entregas rápidas y sin errores.</p>
+                            </li>
+                        </ul>
+                        <div class="mt-10">
+                            <a href="/contact"
+                                class="inline-flex items-center px-8 py-3 bg-brand-dark text-white font-bold rounded hover:bg-brand-primary transition-colors duration-300">
+                                Iniciar Proyecto
+                            </a>
                         </div>
                     </div>
-
                 </div>
-
-
-
             </div>
         </section>
 
+        <!-- 5. Detailed Capabilities Deep-Dive (Long-Form) -->
+        <section class="bg-white">
+            <!-- Capability 1: Ecosistemas de Gestión -->
+            <div class="py-24 border-t border-gray-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row items-center gap-16">
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <h3 class="text-3xl font-bold text-brand-dark mb-6">Ecosistemas de Gestión</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Desarrollamos el sistema nervioso central de tu compañía. Creamos plataformas
+                                personalizadas que integran cada departamento, automatizando flujos de datos complejos y
+                                eliminando duplicidades operativas.
+                            </p>
+                            <ul class="space-y-3 text-gray-500 text-sm">
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-primary rounded-full mr-2"></span> ERPs y CRMs de
+                                    alta precisión</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-primary rounded-full mr-2"></span> Automatización de
+                                    procesos de negocio (BPA)</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-primary rounded-full mr-2"></span> Dashboards de BI
+                                    en tiempo real</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+                                alt="Management Ecosystems" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Capability 2: Soluciones de Movilidad (Gray Background / Reverse) -->
+            <div class="py-24 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <h3 class="text-3xl font-bold text-brand-dark mb-6">Soluciones de Movilidad</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Llevamos tu potencial al bolsillo del usuario. Creamos aplicaciones dinámicas, seguras y
+                                de alto rendimiento que garantizan una interacción fluida en cualquier entorno móvil.
+                            </p>
+                            <ul class="space-y-3 text-gray-500 text-sm">
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-secondary rounded-full mr-2"></span> Apps nativas e
+                                    híbridas premium</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-secondary rounded-full mr-2"></span> Enfoque
+                                    absoluto en UX/UI interactivo</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-secondary rounded-full mr-2"></span> Conectividad
+                                    API segura y escalable</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <img src="https://images.unsplash.com/photo-1521931961826-fe48677230a5?auto=format&fit=crop&w=800&q=80"
+                                alt="Mobile Solutions" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capability 3: Ingeniería de Escala -->
+            <div class="py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row items-center gap-16">
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <h3 class="text-3xl font-bold text-brand-dark mb-6">Ingeniería de Escala</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Diseñamos infraestructuras preparadas para el crecimiento ilimitado. Implementamos
+                                arquitecturas cloud nativas que ajustan sus recursos automáticamente a la demanda de tu
+                                negocio.
+                            </p>
+                            <ul class="space-y-3 text-gray-500 text-sm">
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span> Cloud Engineering
+                                    (AWS/Azure/GCP)</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span> Alta disponibilidad y
+                                    auto-escalado</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span> Optimización de costes
+                                    de infraestructura</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+                                alt="Scale Engineering" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capability 4: Interfaces Avanzadas (Gray Background / Reverse) -->
+            <div class="py-24 bg-brand-dark text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <h3 class="text-3xl font-bold mb-6">Interfaces Avanzadas</h3>
+                            <p class="text-gray-400 leading-relaxed mb-6">
+                                La puerta de entrada a tu software. Construimos frontends ultra-rápidos que facilitan
+                                flujos de trabajo complejos mediante un diseño inteligente y reactividad instantánea.
+                            </p>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-primary rounded-full mr-2"></span> React/Next.js de
+                                    alto rendimiento</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-primary rounded-full mr-2"></span> Manejo de datos
+                                    complejo y visualización</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-primary rounded-full mr-2"></span> Micro-frontends
+                                    escalables</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80"
+                                alt="Advanced Interfaces" class="rounded-xl shadow-lg opacity-80">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capability 5: Flujos de Conectividad -->
+            <div class="py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row items-center gap-16">
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <h3 class="text-3xl font-bold text-brand-dark mb-6">Flujos de Conectividad</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Diseñamos puentes digitales seguros. Conectamos aplicaciones y servicios mediante APIs
+                                robustas que garantizan el intercambio de información sin fricciones ni brechas de
+                                seguridad.
+                            </p>
+                            <ul class="space-y-3 text-gray-500 text-sm">
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-secondary rounded-full mr-2"></span> Arquitecturas
+                                    orientadas a servicios (SOA)</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-secondary rounded-full mr-2"></span> Integración
+                                    segura de sistemas Legacy</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-brand-secondary rounded-full mr-2"></span> Microservicios
+                                    resilientes</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                                alt="Connectivity Flows" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capability 6: Diagnóstico Estructural (Gray Background / Reverse) -->
+            <div class="py-24 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <h3 class="text-3xl font-bold text-brand-dark mb-6">Diagnóstico Estructural</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Evaluamos la salud de tu software actual. Identificamos cuellos de botella técnicos y
+                                riesgos de obsolescencia, trazando una hoja de ruta clara para la modernización de tus
+                                activos digitales.
+                            </p>
+                            <ul class="space-y-3 text-gray-500 text-sm">
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Auditoría técnica
+                                    de arquitecturas</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Análisis de deuda
+                                    técnica</li>
+                                <li class="flex items-center"><span
+                                        class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Consultoría de
+                                    modernización</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=800&q=80"
+                                alt="Structural Diagnosis" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-20 bg-brand-dark text-center border-t border-white/5">
+            <h2 class="text-3xl font-bold text-white mb-8">¿Tienes un reto técnico complejo?</h2>
+            <a href="/contact"
+                class="inline-flex items-center px-12 py-4 bg-brand-primary text-white font-bold rounded-lg hover:bg-brand-secondary transition-all duration-300">
+                Iniciar Auditoría de Proyecto
+            </a>
+        </section>
     </div>
 
     <%- include('partials/footer') %>

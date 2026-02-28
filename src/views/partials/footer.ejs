@@ -1,53 +1,74 @@
 <!-- Footer -->
 <footer class="bg-brand-dark text-gray-300 mt-auto border-t border-gray-800">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="col-span-1 md:col-span-1">
-                <h3 class="text-xl font-bold tracking-tight text-white mb-4">
-                    <%= appName %>
-                </h3>
-                <p class="text-sm leading-relaxed text-gray-400">
-                    Consultoría estratégica de tecnología y ciberseguridad. Impulsamos la transformación digital segura.
-                </p>
+    <div class="max-w-7xl mx-auto pt-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
+            <!-- Left Column: Logo & Socials -->
+            <div class="lg:col-span-2 flex flex-col justify-start space-y-6">
+                <!-- Wrapper natively clips invisible logo overflow so it doesn't extend document height -->
+                <div class="relative -mt-32 -ml-16 lg:-ml-20 h-64 lg:h-72 overflow-hidden">
+                    <img src="/images/logo-footer.png" alt="FastCenter Logo"
+                        class="absolute top-0 left-0 w-full max-w-md h-auto object-contain">
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#"
+                        class="text-gray-400 hover:text-brand-primary transition-colors transform hover:scale-110 duration-200">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                    </a>
+                </div>
             </div>
-            <div>
-                <h3 class="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-4">Compañía</h3>
-                <ul class="space-y-3">
-                    <li><a href="/about" class="text-base hover:text-white transition-colors">Nosotros</a></li>
-                    <li><a href="/careers" class="text-base hover:text-white transition-colors">Talento</a></li>
-                    <li><a href="/contact" class="text-base hover:text-white transition-colors">Contacto</a></li>
+
+            <!-- Links Columns -->
+            <div class="col-span-1">
+                <h3 class="text-sm font-bold tracking-wider uppercase text-white mb-2">Compañía</h3>
+                <!-- Seidor style blue line -->
+                <div class="w-8 h-0.5 bg-brand-primary mb-6"></div>
+                <ul class="space-y-4">
+                    <li><a href="/about"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Nosotros</a></li>
+                    <li><a href="/careers"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Talento</a></li>
+                    <li><a href="/contact"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Contacto</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 class="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-4">Soluciones</h3>
-                <ul class="space-y-3">
-                    <li><a href="/services#hacking"
-                            class="text-base hover:text-white transition-colors">Ciberseguridad</a></li>
-                    <li><a href="/services#proyectos" class="text-base hover:text-white transition-colors">Desarrollo de
-                            Software</a></li>
-                    <li><a href="/services#web" class="text-base hover:text-white transition-colors">Diseño Digital</a>
+
+            <div class="col-span-1">
+                <h3 class="text-sm font-bold tracking-wider uppercase text-white mb-2">Soluciones</h3>
+                <div class="w-8 h-0.5 bg-brand-primary mb-6"></div>
+                <ul class="space-y-4">
+                    <li><a href="/services/cybersecurity"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Ciberseguridad</a>
                     </li>
+                    <li><a href="/services/software"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Desarrollo de
+                            Software</a></li>
+                    <li><a href="/services/web"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Diseño
+                            Digital</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 class="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-4">Legal</h3>
-                <ul class="space-y-3">
-                    <li><a href="#" class="text-base hover:text-white transition-colors">Privacidad</a></li>
-                    <li><a href="#" class="text-base hover:text-white transition-colors">Términos</a></li>
+
+            <div class="col-span-1">
+                <h3 class="text-sm font-bold tracking-wider uppercase text-white mb-2">Legal</h3>
+                <div class="w-8 h-0.5 bg-brand-primary mb-6"></div>
+                <ul class="space-y-4">
+                    <li><a href="#"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Privacidad</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-base text-gray-400 hover:text-brand-primary transition-colors">Términos</a></li>
                 </ul>
             </div>
         </div>
-        <div class="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-sm text-gray-500">
+
+        <!-- Bottom Copyright Bar -->
+        <div
+            class="border-t border-gray-800 flex flex-col md:flex-row justify-between items-center bg-brand-dark pt-6 pb-6 mt-4">
+            <p class="text-sm text-gray-500 font-medium tracking-wide">
                 &copy; <%= new Date().getFullYear() %>
                     <%= appName %>. Todos los derechos reservados.
             </p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                    <span class="sr-only">LinkedIn</span>
-                    <i class="fa-brands fa-linkedin text-2xl"></i>
-                </a>
-            </div>
         </div>
     </div>
 </footer>

@@ -10,5 +10,6 @@ router.get('/about', homeController.about);
 router.get('/careers', homeController.careers);
 router.get('/contact', homeController.contactPage);
 router.post('/contact', homeController.submitContact);
+router.post('/careers/submit', homeController.submitCareers);
 
 module.exports = router;
