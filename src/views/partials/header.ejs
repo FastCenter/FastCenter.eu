@@ -8,6 +8,13 @@
         <%= typeof title !=='undefined' ? title + ' | ' + appName : appName %>
     </title>
     <meta name="description" content="FastCenter - Advanced Cybersecurity & Custom Software Development.">
+
+    <!-- Favicons (Option 7) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
     <!-- Tailwind CSS (CDN for immediate visual fix) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -91,13 +98,13 @@
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
                     <a href="/"
-                        class="<%= (typeof page !== 'undefined' && page === 'home') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        class="<%= (typeof page !== 'undefined' && page === 'home') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-transparent">
                         Inicio
                     </a>
                     <!-- Servicios Dropdown -->
                     <div class="relative group h-full flex items-center">
                         <button
-                            class="<%= (typeof page !== 'undefined' && page.startsWith('services')) ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent outline-none cursor-pointer">
+                            class="<%= (typeof page !== 'undefined' && page.startsWith('services')) ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-transparent outline-none cursor-pointer">
                             Servicios
                             <i
                                 class="fa-solid fa-chevron-down ml-1 text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
@@ -123,11 +130,11 @@
                         </div>
                     </div>
                     <a href="/about"
-                        class="<%= (typeof page !== 'undefined' && page === 'about') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        class="<%= (typeof page !== 'undefined' && page === 'about') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-transparent">
                         Nosotros
                     </a>
                     <a href="/careers"
-                        class="<%= (typeof page !== 'undefined' && page === 'careers') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-b-2 border-transparent">
+                        class="<%= (typeof page !== 'undefined' && page === 'careers') ? 'text-brand-primary border-b-2 border-brand-primary' : 'text-gray-500 hover:text-brand-primary hover:border-b-2 hover:border-brand-primary/30' %> inline-flex items-center px-1 pt-1 text-sm font-medium transition-all duration-200 h-full border-transparent">
                         Talento
                     </a>
                     <a href="/contact"
